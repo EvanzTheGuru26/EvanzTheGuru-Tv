@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://evanztheguru-tv.evansmrgood2003.workers.dev/sitemap.xml
