@@ -4,27 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ETG TV | Digital Services & Digital Skills</title>
+    <title>ETG TV | Digital Services, eCitizen Help & Digital Skills in Kenya</title>
 
-    <meta name="description" content="ETG TV provides digital services, online application assistance and practical digital skills training.">
+    <meta name="description" content="ETG TV provides digital services, eCitizen and government service assistance, online application support, CV and document services, computer services and practical digital skills training in Kenya.">
+
+    <meta name="author" content="Evanz The Guru TV">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0b0f19">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ETG TV | Digital Services & Digital Skills in Kenya">
+    <meta property="og:description" content="Digital services, eCitizen assistance, online applications, document services and practical digital skills training from ETG TV.">
+    <meta property="og:url" content="https://evanztheguru.co.ke/">
+    <meta property="og:site_name" content="ETG TV - Evanz The Guru">
+
+    <!-- Twitter / X Sharing -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ETG TV | Digital Services & Digital Skills in Kenya">
+    <meta name="twitter:description" content="Digital services, eCitizen assistance, online applications and practical digital skills training in Kenya.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "ETG TV - Evanz The Guru",
+      "url": "https://evanztheguru.co.ke/",
+      "description": "ETG TV provides digital services, eCitizen assistance, online application support, computer and document services, and practical digital skills training in Kenya.",
+      "telephone": "+254110446332",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Kenya"
+      },
+      "serviceType": [
+        "eCitizen Assistance",
+        "Digital Services",
+        "Computer Services",
+        "CV and Document Services",
+        "Online Application Assistance",
+        "Digital Skills Training",
+        "Digital Business Support"
+      ]
+    }
+    </script>
 
     <style>
         :root {
             --dark: #0b0f19;
-            --dark2: #121827;
-            --gold: #d9a441;
-            --gold-light: #f4c75d;
+            --dark-2: #111827;
+            --dark-3: #182131;
+            --gold: #d4af37;
+            --gold-light: #f0d77a;
             --white: #ffffff;
-            --light: #f7f8fb;
-            --text: #172033;
-            --muted: #667085;
-            --border: #e5e7eb;
+            --muted: #aeb7c7;
+            --border: rgba(212, 175, 55, 0.22);
+            --shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
         }
 
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         html {
@@ -33,430 +74,415 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            color: var(--text);
-            background: var(--light);
-            line-height: 1.6;
+            background: var(--dark);
+            color: var(--white);
+            line-height: 1.7;
         }
 
         a {
+            color: inherit;
             text-decoration: none;
         }
 
-        /* HEADER */
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+        }
+
         header {
-            background: rgba(11, 15, 25, 0.97);
-            color: white;
-            padding: 16px 6%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
+            background: rgba(11, 15, 25, 0.95);
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(12px);
         }
 
-        .logo {
-            font-size: 25px;
+        .nav {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+        .brand {
+            font-size: 21px;
             font-weight: 800;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
 
-        .logo span {
-            color: var(--gold-light);
+        .brand span {
+            color: var(--gold);
         }
 
         nav {
             display: flex;
             align-items: center;
-            gap: 24px;
+            gap: 20px;
         }
 
         nav a {
-            color: #e5e7eb;
+            color: #e8ecf4;
             font-size: 14px;
-            transition: 0.3s;
+            font-weight: 600;
         }
 
         nav a:hover {
             color: var(--gold-light);
         }
 
-        .nav-button {
-            background: var(--gold);
-            color: var(--dark);
-            padding: 9px 16px;
-            border-radius: 7px;
-            font-weight: bold;
-        }
-
-        /* HERO */
         .hero {
             min-height: 650px;
             display: flex;
             align-items: center;
+            text-align: center;
             background:
-                radial-gradient(circle at 80% 20%, rgba(217,164,65,0.18), transparent 30%),
-                linear-gradient(135deg, #080b12, #182337);
-            color: white;
-            padding: 80px 6%;
+                radial-gradient(circle at 50% 25%, rgba(212, 175, 55, 0.14), transparent 35%),
+                linear-gradient(180deg, #0b0f19 0%, #101725 100%);
+            padding: 90px 0;
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 850px;
+            margin: auto;
         }
 
-        .badge{
-    display:inline-block;
-    margin-top:15px;
-    padding:6px 12px;
-    border:1px solid #d4af37;
-    border-radius:20px;
-    color:#d4af37;
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:.5px;
-    text-transform:uppercase;
+        .eyebrow {
+            color: var(--gold-light);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 13px;
+            font-weight: 800;
+            margin-bottom: 18px;
         }
 
         .hero h1 {
-            font-size: clamp(42px, 7vw, 72px);
-            line-height: 1.05;
+            font-size: clamp(38px, 7vw, 70px);
+            line-height: 1.08;
             margin-bottom: 22px;
         }
 
         .hero h1 span {
-            color: var(--gold-light);
+            color: var(--gold);
         }
 
         .hero p {
-            color: #d1d5db;
-            max-width: 680px;
-            font-size: 19px;
-            margin-bottom: 32px;
+            max-width: 720px;
+            margin: 0 auto 30px;
+            color: var(--muted);
+            font-size: 18px;
         }
 
         .buttons {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: center;
             gap: 12px;
+            flex-wrap: wrap;
         }
 
         .button {
             display: inline-block;
-            padding: 14px 22px;
+            padding: 12px 19px;
             border-radius: 8px;
-            font-weight: bold;
-            transition: 0.3s;
+            font-weight: 800;
+            font-size: 14px;
+            transition: 0.2s ease;
+            border: 1px solid var(--gold);
         }
 
-        .primary {
+        .button.primary {
             background: var(--gold);
-            color: var(--dark);
+            color: #111;
         }
 
-        .primary:hover {
+        .button.primary:hover {
             background: var(--gold-light);
             transform: translateY(-2px);
         }
 
-        .outline {
-            border: 1px solid #ffffff55;
-            color: white;
-        }
-
-        .outline:hover {
-            border-color: var(--gold);
+        .button.secondary {
+            background: transparent;
             color: var(--gold-light);
         }
 
-        /* SECTIONS */
+        .button.secondary:hover {
+            background: rgba(212, 175, 55, 0.1);
+        }
+
         section {
-            padding: 80px 6%;
+            padding: 85px 0;
         }
 
-        .section-heading {
+        .section-title {
             text-align: center;
-            max-width: 750px;
-            margin: 0 auto 50px;
+            max-width: 760px;
+            margin: 0 auto 45px;
         }
 
-        .section-heading .small-title {
-            color: #a67820;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 13px;
-            letter-spacing: 1.5px;
-            margin-bottom: 8px;
-        }
-
-        .section-heading h2 {
-            font-size: 36px;
+        .section-title h2 {
+            font-size: clamp(29px, 5vw, 42px);
             margin-bottom: 12px;
         }
 
-        .section-heading p {
+        .section-title p {
             color: var(--muted);
         }
 
-        /* SERVICES */
-        .services {
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 22px;
-            max-width: 1200px;
-            margin: auto;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
         }
 
-        .card {
-            background: white;
+        .service-card,
+        .info-card {
+            background: linear-gradient(145deg, rgba(24, 33, 49, 0.96), rgba(14, 20, 32, 0.96));
             border: 1px solid var(--border);
             border-radius: 14px;
-            padding: 30px;
-            transition: 0.3s;
+            padding: 27px;
+            box-shadow: var(--shadow);
         }
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-            border-color: #d9a44166;
+        .service-card {
+            transition: transform 0.2s ease, border-color 0.2s ease;
         }
 
-        .icon {
-            width: 52px;
-            height: 52px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #fff6df;
-            border-radius: 12px;
-            font-size: 25px;
-            margin-bottom: 20px;
+        .service-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(212, 175, 55, 0.55);
         }
 
-        .card h3 {
+        .service-icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3,
+        .info-card h3 {
             margin-bottom: 10px;
-            font-size: 19px;
+            font-size: 20px;
         }
 
-        .card p {
-            color: var(--muted);
-            font-size: 15px;
-        }
-
-        /* ECITIZEN */
-        .ecitizen {
-            background: white;
-        }
-
-        .ecitizen-box {
-            max-width: 1100px;
-            margin: auto;
-            background: linear-gradient(135deg, #111827, #1d2b41);
-            border-radius: 18px;
-            padding: 55px;
-            color: white;
-            display: grid;
-            grid-template-columns: 1.3fr 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .ecitizen-box h2 {
-            font-size: 34px;
-            margin-bottom: 15px;
-        }
-
-        .ecitizen-box p {
-            color: #d1d5db;
-        }
-
-        .guide-list {
-            list-style: none;
-        }
-
-        .guide-list li {
-            margin-bottom: 13px;
-            color: #f3f4f6;
-        }
-
-        .guide-list li::before {
-            content: "✓";
-            color: var(--gold-light);
-            font-weight: bold;
-            margin-right: 10px;
-        }
-
-        /* ACADEMY */
-        .academy {
-            background: #fff8e8;
-        }
-
-        .academy-content {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .academy-content h2 {
-            font-size: 38px;
-            margin-bottom: 15px;
-        }
-
-        .academy-content p {
-            color: var(--muted);
-            margin-bottom: 25px;
-        }
-
-        /* WHY US */
-        .why-grid {
-            max-width: 1050px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
-        }
-
-        .why-item {
-            text-align: center;
-            padding: 25px;
-        }
-
-        .why-item strong {
-            display: block;
-            margin: 10px 0;
-            font-size: 18px;
-        }
-
-        .why-item p {
+        .service-card p,
+        .info-card p {
             color: var(--muted);
             font-size: 14px;
         }
 
-        /* SECURITY */
-        .security {
-            background: #f0fdf4;
+        .card-actions {
+            display: flex;
+            gap: 9px;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
 
-        .security-box {
+        .card-actions .button {
+            padding: 9px 12px;
+            font-size: 12px;
+        }
+
+        .alt-section {
+            background: #0e1420;
+        }
+
+        .notice {
             max-width: 900px;
+            margin: 0 auto 30px;
+            padding: 17px 20px;
+            border-left: 4px solid var(--gold);
+            background: rgba(212, 175, 55, 0.07);
+            color: #dce2ec;
+            border-radius: 7px;
+        }
+
+        .guide-card {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+
+        .guide-card .card-actions {
+            margin-top: auto;
+            padding-top: 18px;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 6px 12px;
+            border: 1px solid var(--gold);
+            border-radius: 20px;
+            color: var(--gold);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+        }
+
+        .academy-intro {
+            text-align: center;
+            max-width: 760px;
+            margin: -20px auto 35px;
+            color: var(--muted);
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .check-list {
+            list-style: none;
+            margin-top: 16px;
+        }
+
+        .check-list li {
+            margin: 10px 0;
+            color: #dfe5ef;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: var(--gold);
+            font-weight: 900;
+            margin-right: 10px;
+        }
+
+        .contact-box {
+            text-align: center;
+            max-width: 820px;
             margin: auto;
-            text-align: center;
+            background: linear-gradient(145deg, #171f2e, #0e1420);
+            border: 1px solid var(--border);
+            padding: 45px 25px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
         }
 
-        .security-box h2 {
+        .contact-box h2 {
+            font-size: 34px;
             margin-bottom: 12px;
         }
 
-        .security-box p {
-            color: #475467;
-        }
-
-        /* CONTACT */
-        .contact {
-            background: var(--dark);
-            color: white;
-            text-align: center;
-        }
-
-        .contact h2 {
-            font-size: 38px;
-            margin-bottom: 12px;
-        }
-
-        .contact p {
-            color: #cbd5e1;
+        .contact-box p {
+            color: var(--muted);
             margin-bottom: 25px;
         }
 
-        /* FOOTER */
+        .contact-number {
+            color: var(--gold-light);
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 22px;
+        }
+
         footer {
-            background: #060911;
-            color: #9ca3af;
+            border-top: 1px solid var(--border);
+            padding: 35px 0 45px;
+            background: #080c14;
             text-align: center;
-            padding: 28px 6%;
-            font-size: 13px;
+            color: var(--muted);
         }
 
         footer strong {
-            color: #e5e7eb;
+            color: var(--white);
         }
 
         .footer-links {
-            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 17px;
+            margin: 18px 0;
         }
 
-        .footer-links a {
-            color: #9ca3af;
-            margin: 0 8px;
+        .footer-links a:hover {
+            color: var(--gold-light);
         }
 
-        /* WHATSAPP */
         .whatsapp {
             position: fixed;
             right: 20px;
             bottom: 20px;
-            width: 58px;
-            height: 58px;
-            background: #25D366;
-            color: white;
+            width: 56px;
+            height: 56px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+            background: #25d366;
+            color: white;
             font-size: 27px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+            box-shadow: 0 8px 25px rgba(0,0,0,.35);
             z-index: 999;
         }
 
-        /* MOBILE */
-        @media (max-width: 750px) {
+        .small-text {
+            font-size: 12px;
+            color: #8f99aa;
+            margin-top: 25px;
+        }
 
-            header {
-                padding: 14px 5%;
+        @media (max-width: 850px) {
+            .services-grid,
+            .two-column {
+                grid-template-columns: repeat(2, 1fr);
             }
 
             nav {
-                gap: 10px;
+                gap: 11px;
             }
 
-            nav a:not(.nav-button) {
+            nav a {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .nav {
+                min-height: 65px;
+            }
+
+            .brand {
+                font-size: 18px;
+            }
+
+            nav {
                 display: none;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .services-grid,
+            .two-column {
+                grid-template-columns: 1fr;
             }
 
             .hero {
                 min-height: 600px;
-                padding: 70px 5%;
-            }
-
-            .hero h1 {
-                font-size: 44px;
+                padding: 70px 0;
             }
 
             .hero p {
-                font-size: 17px;
+                font-size: 16px;
             }
 
-            section {
-                padding: 65px 5%;
+            .service-card,
+            .info-card {
+                padding: 23px;
             }
 
-            .section-heading h2 {
-                font-size: 30px;
-            }
-
-            .ecitizen-box {
-                grid-template-columns: 1fr;
-                padding: 35px 25px;
-            }
-
-            .ecitizen-box h2 {
-                font-size: 29px;
-            }
-
-            .academy-content h2,
-            .contact h2 {
-                font-size: 30px;
+            .contact-box h2 {
+                font-size: 28px;
             }
         }
     </style>
@@ -466,29 +492,27 @@
 
 <!-- HEADER -->
 <header>
+    <div class="container nav">
+        <a href="#" class="brand">ETG <span>TV</span></a>
 
-    <div class="logo">
-        ETG <span>TV</span>
+        <nav aria-label="Main navigation">
+            <a href="#services">Services</a>
+            <a href="#ecitizen">eCitizen</a>
+            <a href="#guide-library">Guides</a>
+            <a href="#academy">Academy</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </div>
-
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#ecitizen">eCitizen</a>
-        <a href="#academy">Academy</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="nav-button">Contact</a>
-    </nav>
-
 </header>
 
 
 <!-- HERO -->
 <section class="hero">
+    <div class="container hero-content">
 
-    <div class="hero-content">
-
-        <div class="badge">
-            DIGITAL SERVICES • ONLINE ASSISTANCE • DIGITAL SKILLS
+        <div class="eyebrow">
+            ETG TV • Evanz The Guru
         </div>
 
         <h1>
@@ -496,9 +520,8 @@
         </h1>
 
         <p>
-            ETG TV helps individuals and businesses access digital
-            services, understand online applications and develop
-            practical computer and digital skills.
+            Practical digital services, eCitizen assistance, online application support,
+            document services and digital skills training for individuals and businesses in Kenya.
         </p>
 
         <div class="buttons">
@@ -507,960 +530,226 @@
                 Explore Services
             </a>
 
-            <a href="#academy" class="button outline">
-                Learn Digital Skills
+            <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20would%20like%20to%20enquire%20about%20your%20digital%20services."
+               class="button secondary">
+                💬 Talk to ETG TV
             </a>
 
         </div>
 
     </div>
-
 </section>
+
 
 <!-- SERVICES -->
 <section id="services">
 
-    <div class="section-heading">
-
-        <div class="small-title">
-            ETG TV Digital Services
-        </div>
-
-        <h2>
-            Professional Digital Services
-        </h2>
-
-        <p>
-            Practical, reliable and affordable digital assistance
-            for individuals, students, job seekers and businesses.
-        </p>
-
-    </div>
-
-
-    <div class="services">
-
-
-        <!-- SERVICE 1 -->
-        <div class="card">
-
-            <div class="icon">🇰🇪</div>
-
-            <h3>
-                eCitizen & Government Services
-            </h3>
-
-            <p>
-                Get guidance and assistance navigating eCitizen
-                and other official online government services.
-            </p>
-
-            <br>
-
-            <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20assistance%20with%20eCitizen%20or%20an%20online%20government%20service." 
-               class="button primary">
-                Request Service
-            </a>
-
-        </div>
-
-
-        <!-- SERVICE 2 -->
-        <div class="card">
-
-            <div class="icon">💻</div>
-
-            <h3>
-                Computer & Cyber Services
-            </h3>
-
-            <p>
-                Typing, printing, scanning, internet research,
-                document preparation and other everyday computer services.
-            </p>
-
-            <br>
-
-            <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20would%20like%20to%20enquire%20about%20computer%20or%20cyber%20services."
-               class="button primary">
-                Request Service
-            </a>
-
-        </div>
-
-
-        <!-- SERVICE 3 -->
-        <div class="card">
-
-            <div class="icon">📄</div>
-
-            <h3>
-                CV & Document Services
-            </h3>
-
-            <p>
-                Professional CVs, cover letters, application letters,
-                document formatting and other digital documents.
-            </p>
-
-            <br>
-
-            <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20with%20a%20CV%20or%20document."
-               class="button primary">
-                Request Service
-            </a>
-
-        </div>
-
-
-        <!-- SERVICE 4 -->
-        <div class="card">
-
-            <div class="icon">🌐</div>
-
-            <h3>
-                Online Applications
-            </h3>
-
-            <p>
-                Assistance understanding and completing online
-                applications, registrations and digital forms.
-            </p>
-
-            <br>
-
-            <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20assistance%20with%20an%20online%20application."
-               class="button primary">
-                Request Service
-            </a>
-
-        </div>
-
-
-        <!-- SERVICE 5 -->
-        <div class="card">
-
-            <div class="icon">🎓</div>
-
-            <h3>
-                Digital Skills Training
-            </h3>
-
-            <p>
-                Learn computer basics, internet use, email,
-                online services and practical digital skills.
-            </p>
-
-            <br>
-
-            <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20am%20interested%20in%20digital%20skills%20training."
-               class="button primary">
-                Join Training
-            </a>
-
-        </div>
-
-
-        <!-- SERVICE 6 -->
-        <div class="card">
-
-            <div class="icon">📱</div>
-
-            <h3>
-                Digital Business Support
-            </h3>
-
-            <p>
-                Practical digital assistance for small businesses,
-                online presence, basic technology and digital productivity.
-            </p>
-
-            <br>
-
-            <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20would%20like%20to%20enquire%20about%20digital%20business support."
-               class="button primary">
-                Request Service
-            </a>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-<!-- ECITIZEN HELP CENTER -->
-<section id="ecitizen" class="ecitizen">
-
-    <div class="section-heading">
-
-        <div class="small-title">
-            ETG TV eCitizen Help Center
-        </div>
-
-        <h2>
-            Need Help Using eCitizen?
-        </h2>
-
-        <p>
-            Learn how to navigate selected online government services
-            and get practical assistance when you need it.
-        </p>
-
-    </div>
-
-
-    <div class="services">
-
-
-        <!-- GOOD CONDUCT -->
-        <div class="card">
-
-            <div class="icon">🛡️</div>
-
-            <h3>
-                Certificate of Good Conduct
-            </h3>
-
-            <p>
-                Learn the general process of accessing police clearance
-                services online and what to expect during an application.
-            </p>
-
-            <br>
-
-            <div style="display:flex; gap:10px; flex-wrap:wrap;">
-
-    <a href="guides/good-conduct.html"
-       class="button primary">
-        📖 Read Guide
-    </a>
-
-    <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20with%20a%20Certificate%20of%20Good%20Conduct."
-       class="button primary">
-        💬 Get Assistance
-    </a>
-
-            </div>
-                Get Assistance
-            </a>
-
-        </div>
-
-
-        <!-- PASSPORT -->
-        <div class="card">
-
-            <div class="icon">🛂</div>
-
-            <h3>
-                Passport & Immigration
-            </h3>
-
-            <p>
-                Get guidance on accessing passport and selected
-                immigration services through your eCitizen account.
-            </p>
-
-            <br>
-
-            <div style="display:flex; gap:10px; flex-wrap:wrap;">
-
-    <a href="guides/passport.html"
-       class="button primary">
-        📖 Read Guide
-    </a>
-
-    <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20with%20Passport%20%26%20Immigration."
-       class="button primary">
-        💬 Get Assistance
-    </a>
-
-            </div>
-                Get Assistance
-            </a>
-
-        </div>
-
-
-        <!-- NTSA -->
-        <div class="card">
-
-            <div class="icon">🚗</div>
-
-            <h3>
-                NTSA Services
-            </h3>
-
-            <p>
-                Get guidance on selected NTSA services including
-                driving licence applications, tests and renewals.
-            </p>
-
-            <br>
-
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
-
-    <a href="guides/ntsa.html"
-       class="button primary">
-        📖 Read Guide
-    </a>
-
-    <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20with%20an%20NTSA%20service."
-       class="button primary">
-        💬 Get Assistance
-    </a>
-
-      </div>
-                Get Assistance
-            </a>
-
-        </div>
-
-
-        <!-- BIRTH CERTIFICATE -->
-        <div class="card">
-
-            <div class="icon">📜</div>
-
-            <h3>
-                Birth & Civil Registration
-            </h3>
-
-            <p>
-                Learn about selected birth and civil registration
-                services available through the official eCitizen platform.
-            </p>
-
-            <br>
-
-            <div style="display:flex; gap:10px; flex-wrap:wrap;">
-
-    <a href="guides/birth-certificate.html"
-       class="button primary">
-        📖 Read Guide
-    </a>
-
-    <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20with%20a%20birth%20certificate%20or%20civil%20registration%20service."
-       class="button primary">
-        💬 Get Assistance
-    </a>
-
-            </div>
-                Get Assistance
-            </a>
-
-        </div>
-
-
-        <!-- BUSINESS -->
-        <div class="card">
-
-            <div class="icon">🏢</div>
-
-            <h3>
-                Business Services
-            </h3>
-
-            <p>
-                Get guidance on accessing business-related government
-                services and completing online applications.
-            </p>
-
-            <br>
-
-            <div style="display:flex; gap:10px; flex-wrap:wrap;">
-
-    <a href="guides/business-registration.html"
-       class="button primary">
-        📖 Read Guide
-    </a>
-
-    <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20with%20business%20registration."
-       class="button primary">
-        💬 Get Assistance
-    </a>
-
-            </div>
-                Get Assistance
-            </a>
-
-        </div>
-
-
-        <!-- LAND -->
-        <div class="card">
-
-            <div class="icon">🏠</div>
-
-            <h3>
-                Land & Property Services
-            </h3>
-
-            <p>
-                Get general guidance on accessing selected land and
-                property-related government services online.
-            </p>
-
-            <br>
-
-            <div style="display:flex; gap:10px; flex-wrap:wrap;">
-
-    <a href="guides/land-property.html"
-       class="button primary">
-        📖 Read Guide
-    </a>
-
-    <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20with%20a%20land%20or%20property%20service."
-       class="button primary">
-        💬 Get Assistance
-    </a>
-
-            </div>
-<!-- FEATURED ECITIZEN GUIDE -->
-<div style="max-width:1000px; margin:70px auto 0;">
-
-    <div class="section-heading" style="margin-bottom:35px;">
-
-        <div class="small-title">
-            Featured ETG TV Guide
-        </div>
-
-        <h2>
-            How to Apply for a Certificate of Good Conduct
-        </h2>
-
-        <p>
-            A practical guide to applying for a Police Clearance
-            Certificate through the official DCI eCitizen service.
-        </p>
-
-    </div>
-
-
-    <!-- INTRODUCTION -->
-    <div class="card" style="margin-bottom:20px;">
-
-        <h3>🛡️ What is a Certificate of Good Conduct?</h3>
-
-        <p>
-            A Certificate of Good Conduct, also known as a Police
-            Clearance Certificate, is an official document issued
-            through the Directorate of Criminal Investigations (DCI).
-            It is commonly requested for employment, immigration,
-            professional and other official purposes.
-        </p>
-
-    </div>
-
-
-    <!-- REQUIREMENTS -->
-    <div class="card" style="margin-bottom:20px;">
-
-        <h3>📋 What You Need</h3>
-
-        <p>
-            For a Kenyan adult applicant, you should generally have:
-        </p>
-
-        <br>
-
-        <ul style="padding-left:20px; color:#667085;">
-
-            <li>
-                An active eCitizen account
-            </li>
-
-            <li>
-                Your original National ID
-            </li>
-
-            <li>
-                Access to the required payment method
-            </li>
-
-            <li>
-                The ability to print the application invoice
-                and C24 form
-            </li>
-
-            <li>
-                Access to the selected fingerprinting location
-            </li>
-
-        </ul>
-
-        <br>
-
-        <p>
-            Requirements can differ for minors, foreign residents,
-            refugees and applicants outside Kenya. Always check the
-            latest DCI instructions for your category.
-        </p>
-
-    </div>
-
-
-    <!-- STEP 1 -->
-    <div class="card" style="margin-bottom:20px;">
-
-        <h3>1️⃣ Access the Official DCI eCitizen Service</h3>
-
-        <p>
-            Go to the official DCI eCitizen service and sign in
-            using your eCitizen account.
-        </p>
-
-        <br>
-
-        <a href="https://dci.ecitizen.go.ke/"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="button primary">
-            Open DCI eCitizen
-        </a>
-
-    </div>
-
-
-    <!-- STEP 2 -->
-    <div class="card" style="margin-bottom:20px;">
-
-        <h3>2️⃣ Start Your Application</h3>
-
-        <p>
-            Follow the instructions provided on the official portal
-            and select the appropriate Police Clearance Certificate
-            application. Kenyan adults should use the adult application
-            option.
-        </p>
-
-        <br>
-
-        <p>
-            Carefully enter your personal information and review it
-            before submitting.
-        </p>
-
-    </div>
-
-
-    <!-- STEP 3 -->
-    <div class="card" style="margin-bottom:20px;">
-
-        <h3>3️⃣ Select Your Fingerprinting Location</h3>
-
-        <p>
-            During the application, select the available location
-            where you will have your fingerprints taken.
-        </p>
-
-        <br>
-
-        <p>
-            DCI currently lists Huduma Centres countrywide and DCI
-            Headquarters among the locations available for fingerprint
-            taking, with other locations indicated through the
-            application system.
-        </p>
-
-    </div>
-
-
-    <!-- STEP 4 -->
-    <div class="card" style="margin-bottom:20px;">
-
-        <h3>4️⃣ Make the Required Payment</h3>
-
-        <p>
-            Select the available payment method shown on the official
-            application and complete the required payment.
-        </p>
-
-        <br>
-
-        <p>
-            <strong>
-                Always confirm the amount displayed on the official
-                government portal before making payment.
-            </strong>
-        </p>
-
-    </div>
-
-
-    <!-- STEP 5 -->
-    <div class="card" style="margin-bottom:20px;">
-
-        <h3>5️⃣ Download and Print Your Documents</h3>
-
-        <p>
-            After completing the application and payment, download
-            and print:
-        </p>
-
-        <br>
-
-        <ul style="padding-left:20px; color:#667085;">
-
-            <li>
-                Two copies of your invoice
-            </li>
-
-            <li>
-                One copy of the C24 form printed on both sides
-                on A4 paper
-            </li>
-
-        </ul>
-
-    </div>
-
-
-    <!-- STEP 6 -->
-    <div class="card" style="margin-bottom:20px;">
-
-        <h3>6️⃣ Go for Fingerprinting</h3>
-
-        <p>
-            Present the required documents together with your original
-            National ID at the fingerprinting location selected during
-            your application.
-        </p>
-
-        <br>
-
-        <p>
-            Your fingerprints are taken for processing of the Police
-            Clearance Certificate.
-        </p>
-
-    </div>
-
-
-    <!-- STEP 7 -->
-    <div class="card" style="margin-bottom:20px;">
-
-        <h3>7️⃣ Wait for the Certificate</h3>
-
-        <p>
-            After fingerprinting and processing, monitor your eCitizen
-            account and phone for notification.
-        </p>
-
-        <br>
-
-        <p>
-            DCI states that applicants receive an SMS notification
-            when the certificate is ready for download.
-        </p>
-
-    </div>
-
-
-    <!-- STEP 8 -->
-    <div class="card" style="margin-bottom:20px;">
-
-        <h3>8️⃣ Download Your Certificate</h3>
-
-        <p>
-            Once notified that your Police Clearance Certificate is
-            ready, log in to your eCitizen account and follow the
-            instructions provided to access your certificate.
-        </p>
-
-    </div>
-
-
-    <!-- IMPORTANT -->
-    <div style="background:#fff8e8; border-radius:14px; padding:30px; margin-bottom:20px;">
-
-        <h3 style="margin-bottom:15px;">
-            ⚠️ Important Things to Remember
-        </h3>
-
-        <ul style="padding-left:20px; color:#475467;">
-
-            <li>
-                Check your personal details carefully before submitting.
-            </li>
-
-            <li>
-                Keep your eCitizen login credentials private.
-            </li>
-
-            <li>
-                Never share your password or OTP with anyone.
-            </li>
-
-            <li>
-                Confirm payment information on the official portal.
-            </li>
-
-            <li>
-                Follow the latest DCI instructions because procedures
-                and requirements may change.
-            </li>
-
-        </ul>
-
-    </div>
-
-
-    <!-- NEED HELP -->
-    <div style="background:linear-gradient(135deg,#111827,#1d2b41); color:white; border-radius:16px; padding:40px; text-align:center;">
-
-        <h3 style="font-size:28px; margin-bottom:12px;">
-            Need Help With the Process?
-        </h3>
-
-        <p style="color:#d1d5db; margin-bottom:25px;">
-            ETG TV can provide practical digital assistance in
-            understanding and navigating the application process.
-        </p>
-
-        <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20applying%20for%20a%20Certificate%20of%20Good%20Conduct."
-           class="button primary">
-            💬 Get Help on WhatsApp
-        </a>
-
-    </div>
-
-</div>
-
-    <!-- OFFICIAL PORTAL -->
-    <div style="max-width:900px; margin:50px auto 0; text-align:center;">
-
-        <h3 style="font-size:24px; margin-bottom:12px;">
-            Always Use the Official eCitizen Portal
-        </h3>
-
-        <p style="color:#667085; margin-bottom:20px;">
-            ETG TV provides educational guidance and digital assistance.
-            Government applications and payments should be completed
-            through official government platforms.
-        </p>
-
-        <a href="https://www.ecitizen.go.ke/"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="button primary">
-            Visit Official eCitizen
-        </a>
-
-    </div>
-
-
-    <!-- SECURITY NOTICE -->
-    <div style="max-width:900px; margin:35px auto 0; padding:25px; background:#fff8e8; border-radius:12px; text-align:center;">
-
-        <h3 style="margin-bottom:10px;">
-            🔐 Protect Your Account
-        </h3>
-
-        <p style="color:#475467;">
-            Never share your eCitizen password, PIN, OTP or other
-            sensitive security information with anyone. ETG TV will
-            never ask you to publicly share these details.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ACADEMY -->
- <section id="academy" class="section">
     <div class="container">
 
         <div class="section-title">
-            <span class="eyebrow">🎓 ETG DIGITAL ACADEMY</span>
-            <h2>Learn Digital Skills With Confidence</h2>
+
+            <h2>
+                Our Digital Services
+            </h2>
+
             <p>
-                Practical digital training designed to help you become
-                more confident, productive and independent in the digital world.
+                Practical assistance for everyday digital, government and business needs.
             </p>
+
         </div>
+
 
         <div class="services-grid">
 
+
+            <!-- SERVICE 1 -->
             <div class="service-card">
-                <div class="service-icon">💻</div>
-                <h3>Computer Basics</h3>
+
+                <div class="service-icon">
+                    🇰🇪
+                </div>
+
+                <h3>
+                    eCitizen & Government Services
+                </h3>
+
                 <p>
-                    Learn how to use a computer confidently, manage files,
-                    type documents, use applications and perform everyday
-                    computer tasks.
+                    Assistance with eCitizen and selected government online services,
+                    including applications, guidance and digital submissions.
                 </p>
 
-                <span class="badge">Coming Soon</span>
+                <div class="card-actions">
+
+                    <a href="#ecitizen" class="button primary">
+                        Explore
+                    </a>
+
+                    <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20with%20an%20eCitizen%20or%20government%20service."
+                       class="button secondary">
+                        Request Service
+                    </a>
+
+                </div>
+
             </div>
 
 
+            <!-- SERVICE 2 -->
             <div class="service-card">
-                <div class="service-icon">📊</div>
-                <h3>Microsoft Office</h3>
+
+                <div class="service-icon">
+                    💻
+                </div>
+
+                <h3>
+                    Computer & Cyber Services
+                </h3>
+
                 <p>
-                    Build practical skills in Microsoft Word, Excel and
-                    PowerPoint for school, work and business.
+                    Practical computer assistance, online tasks, document preparation,
+                    printing-related support and other digital services.
                 </p>
 
-                <span class="badge">Coming Soon</span>
+                <div class="card-actions">
+
+                    <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20with%20a%20computer%20or%20digital%20service."
+                       class="button primary">
+                        Request Service
+                    </a>
+
+                </div>
+
             </div>
 
 
+            <!-- SERVICE 3 -->
             <div class="service-card">
-                <div class="service-icon">🌐</div>
-                <h3>Internet & Email</h3>
+
+                <div class="service-icon">
+                    📄
+                </div>
+
+                <h3>
+                    CV & Document Services
+                </h3>
+
                 <p>
-                    Learn how to search effectively, create and manage email,
-                    download documents and use online services safely.
+                    Professional CV assistance, document formatting and practical support
+                    for creating clear digital documents.
                 </p>
 
-                <span class="badge">Coming Soon</span>
+                <div class="card-actions">
+
+                    <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20with%20a%20CV%20or%20document."
+                       class="button primary">
+                        Request Service
+                    </a>
+
+                </div>
+
             </div>
 
 
+            <!-- SERVICE 4 -->
             <div class="service-card">
-                <div class="service-icon">🇰🇪</div>
-                <h3>eCitizen Training</h3>
+
+                <div class="service-icon">
+                    🌐
+                </div>
+
+                <h3>
+                    Online Applications
+                </h3>
+
                 <p>
-                    Learn how to navigate eCitizen and understand common
-                    government online services without depending on others.
+                    Guidance and assistance with online applications, account setup,
+                    document uploads and digital application processes.
                 </p>
 
-                <span class="badge">Coming Soon</span>
+                <div class="card-actions">
+
+                    <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20with%20an%20online%20application."
+                       class="button primary">
+                        Request Service
+                    </a>
+
+                </div>
+
             </div>
 
 
+            <!-- SERVICE 5 -->
             <div class="service-card">
-                <div class="service-icon">📱</div>
-                <h3>Digital & Smartphone Skills</h3>
+
+                <div class="service-icon">
+                    🎓
+                </div>
+
+                <h3>
+                    Digital Skills Training
+                </h3>
+
                 <p>
-                    Learn useful smartphone, online communication,
-                    digital safety and everyday technology skills.
+                    Practical training designed to help beginners become more confident
+                    with computers, smartphones, the internet and digital tools.
                 </p>
 
-                <span class="badge">Coming Soon</span>
+                <div class="card-actions">
+
+                    <a href="#academy" class="button primary">
+                        View Academy
+                    </a>
+
+                    <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20am%20interested%20in%20digital%20skills%20training."
+                       class="button secondary">
+                        Join Interest List
+                    </a>
+
+                </div>
+
             </div>
 
 
+            <!-- SERVICE 6 -->
             <div class="service-card">
-                <div class="service-icon">💼</div>
-                <h3>Digital Business Skills</h3>
+
+                <div class="service-icon">
+                    📱
+                </div>
+
+                <h3>
+                    Digital Business Support
+                </h3>
+
                 <p>
-                    Learn practical digital skills for starting, managing
-                    and growing a modern small business.
+                    Practical digital support for individuals, small businesses and
+                    entrepreneurs looking to work more effectively online.
                 </p>
 
-                <span class="badge">Coming Soon</span>
+                <div class="card-actions">
+
+                    <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20digital%20business%20support."
+                       class="button primary">
+                        Request Service
+                    </a>
+
+                </div>
+
             </div>
+
 
         </div>
 
 
-        <div class="notice" style="margin-top:30px; text-align:center;">
-
-            <strong>🚀 ETG Digital Academy is coming soon.</strong>
-
-            <p style="margin-top:8px;">
-                We are preparing practical, affordable digital training
-                designed for beginners and everyday technology users.
-            </p>
-
-            <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20am%20interested%20in%20ETG%20Digital%20Academy."
-               target="_blank"
-               class="button primary"
-               style="margin-top:15px;">
-                💬 Join the Interest List
-            </a>
-
-        </div>
-
-    </div>
- </section>
-<!-- WHY ETG -->
-<section>
-
-    <div class="section-heading">
-
-        <div class="small-title">
-            Why ETG TV
-        </div>
-
-        <h2>
-            Simple. Practical. Digital.
-        </h2>
-
-    </div>
-
-
-    <div class="why-grid">
-
-        <div class="why-item">
-
-            <div class="icon" style="margin:auto;">
-                ✓
-            </div>
+        <div class="notice" style="margin-top:30px;">
 
             <strong>
-                Practical Guidance
+                Transparent pricing:
             </strong>
 
-            <p>
-                We focus on clear instructions that people can actually use.
-            </p>
-
-        </div>
-
-
-        <div class="why-item">
-
-            <div class="icon" style="margin:auto;">
-                🎓
-            </div>
-
-            <strong>
-                Digital Education
-            </strong>
-
-            <p>
-                Our goal is to help people become more confident with technology.
-            </p>
-
-        </div>
-
-
-        <div class="why-item">
-
-            <div class="icon" style="margin:auto;">
-                🔒
-            </div>
-
-            <strong>
-                Security First
-            </strong>
-
-            <p>
-                We encourage safe digital practices and responsible use of online services.
-            </p>
-
-        </div>
-
-
-        <div class="why-item">
-
-            <div class="icon" style="margin:auto;">
-                🇰🇪
-            </div>
-
-            <strong>
-                Built for Everyone
-            </strong>
-
-            <p>
-                Digital information should be accessible, understandable and useful.
-            </p>
+            ETG TV service charges vary depending on the type and complexity of the service.
+            Government/application fees are separate where applicable.
+            Contact us for a quotation before proceeding.
 
         </div>
 
@@ -1469,111 +758,34 @@
 </section>
 
 
-<!-- SECURITY -->
-<section class="security">
+<!-- ECITIZEN HELP CENTER -->
+<section id="ecitizen" class="alt-section">
 
-    <div class="security-box">
+    <div class="container">
 
-        <h2>
-            🔐 Your Digital Security Matters
-        </h2>
+        <div class="section-title">
 
-        <p>
-            ETG TV will never ask you to publicly share sensitive
-            information such as passwords, PINs or one-time passwords (OTPs).
-            Always protect your personal information when using online services.
-        </p>
+            <h2>
+                🇰🇪 eCitizen Help Center
+            </h2>
 
-        <br>
+            <p>
+                Simple guides to help you understand common Kenyan government and public services.
+            </p>
 
-        <p>
-            <strong>
-                ETG TV is an independent digital services and education
-                platform and is not affiliated with the Government of Kenya
-                or eCitizen.
-            </strong>
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ABOUT -->
-<section id="about">
-
-    <div class="section-heading">
-
-        <div class="small-title">
-            About ETG TV
         </div>
 
-        <h2>
-            Technology With Purpose
-        </h2>
 
-        <p>
-            ETG TV is focused on helping people understand and use
-            technology with confidence — while creating opportunities
-            through digital skills, education and innovation.
-        </p>
-
-    </div>
-
-</section>
+        <div class="services-grid">
 
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
+            <!-- GOOD CONDUCT -->
+            <div class="service-card guide-card">
 
-    <h2>
-        Ready to Get Started?
-    </h2>
+                <div class="service-icon">
+                    🛡️
+                </div>
 
-    <p>
-        Contact ETG TV for digital assistance, training and enquiries.
-    </p>
-
-    <!-- Replace the # below with your WhatsApp link later -->
-    <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20would%20like%20to%20enquire%20about%20your%20digital%20services." class="button primary">
-    💬 Contact ETG TV
-    </a>
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-
-    <div>
-        <strong>ETG TV</strong> — Digital Services & Digital Skills
-    </div>
-
-    <div class="footer-links">
-
-        <a href="#services">Services</a>
-
-        <a href="#ecitizen">eCitizen</a>
-
-        <a href="#academy">Academy</a>
-
-        <a href="#about">About</a>
-
-        <a href="#contact">Contact</a>
-
-    </div>
-
-    <br>
-
-    © 2026 ETG TV. All Rights Reserved.
-
-</footer>
-
-
-<!-- WHATSAPP BUTTON -->
-<!-- We will add your real WhatsApp number here later. -->
-<a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20would%20like%20to%20enquire%20about%20your%20digital%20services." class="whatsapp" aria-label="WhatsApp">
-    💬
-</a>
-
-</body>
-            </html>
+                <h3>
+                    Certificate of Good Conduct
+ 
