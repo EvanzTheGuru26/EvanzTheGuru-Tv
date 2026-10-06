@@ -4,183 +4,456 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ETG TV | Digital Services & Online Assistance</title>
+    <title>ETG TV | Digital Services & Digital Skills</title>
 
-    <meta name="description" content="ETG TV provides digital services, online application assistance and digital skills training.">
+    <meta name="description" content="ETG TV provides digital services, online application assistance and practical digital skills training.">
 
     <style>
+        :root {
+            --dark: #0b0f19;
+            --dark2: #121827;
+            --gold: #d9a441;
+            --gold-light: #f4c75d;
+            --white: #ffffff;
+            --light: #f7f8fb;
+            --text: #172033;
+            --muted: #667085;
+            --border: #e5e7eb;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f7f8fa;
-            color: #172033;
+            color: var(--text);
+            background: var(--light);
             line-height: 1.6;
         }
 
+        a {
+            text-decoration: none;
+        }
+
+        /* HEADER */
         header {
-            background: #101827;
+            background: rgba(11, 15, 25, 0.97);
             color: white;
-            padding: 18px 6%;
+            padding: 16px 6%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
 
         .logo {
-            font-size: 22px;
-            font-weight: bold;
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: 1px;
         }
 
         .logo span {
-            color: #f5b942;
+            color: var(--gold-light);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
         }
 
         nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
+            color: #e5e7eb;
             font-size: 14px;
+            transition: 0.3s;
         }
 
+        nav a:hover {
+            color: var(--gold-light);
+        }
+
+        .nav-button {
+            background: var(--gold);
+            color: var(--dark);
+            padding: 9px 16px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        /* HERO */
         .hero {
-            background: linear-gradient(135deg, #101827, #1e3a5f);
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            background:
+                radial-gradient(circle at 80% 20%, rgba(217,164,65,0.18), transparent 30%),
+                linear-gradient(135deg, #080b12, #182337);
             color: white;
-            padding: 90px 6%;
-            text-align: center;
+            padding: 80px 6%;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .badge {
+            display: inline-block;
+            border: 1px solid rgba(244,199,93,0.5);
+            color: var(--gold-light);
+            padding: 7px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            margin-bottom: 22px;
         }
 
         .hero h1 {
-            font-size: 42px;
-            margin-bottom: 18px;
+            font-size: clamp(42px, 7vw, 72px);
+            line-height: 1.05;
+            margin-bottom: 22px;
         }
 
         .hero h1 span {
-            color: #f5b942;
+            color: var(--gold-light);
         }
 
         .hero p {
-            max-width: 700px;
-            margin: 0 auto 30px;
-            font-size: 18px;
-            color: #e5e7eb;
+            color: #d1d5db;
+            max-width: 680px;
+            font-size: 19px;
+            margin-bottom: 32px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
         }
 
         .button {
             display: inline-block;
-            padding: 13px 24px;
+            padding: 14px 22px;
             border-radius: 8px;
-            text-decoration: none;
             font-weight: bold;
-            margin: 5px;
+            transition: 0.3s;
         }
 
         .primary {
-            background: #f5b942;
-            color: #101827;
+            background: var(--gold);
+            color: var(--dark);
         }
 
-        .secondary {
-            border: 1px solid white;
+        .primary:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+        }
+
+        .outline {
+            border: 1px solid #ffffff55;
             color: white;
         }
 
+        .outline:hover {
+            border-color: var(--gold);
+            color: var(--gold-light);
+        }
+
+        /* SECTIONS */
         section {
-            padding: 65px 6%;
+            padding: 80px 6%;
         }
 
-        .section-title {
+        .section-heading {
             text-align: center;
-            margin-bottom: 40px;
+            max-width: 750px;
+            margin: 0 auto 50px;
         }
 
-        .section-title h2 {
-            font-size: 30px;
-            margin-bottom: 10px;
+        .section-heading .small-title {
+            color: #a67820;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
         }
 
-        .section-title p {
-            color: #667085;
+        .section-heading h2 {
+            font-size: 36px;
+            margin-bottom: 12px;
         }
 
+        .section-heading p {
+            color: var(--muted);
+        }
+
+        /* SERVICES */
         .services {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 20px;
+            gap: 22px;
+            max-width: 1200px;
+            margin: auto;
         }
 
         .card {
             background: white;
-            padding: 28px;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 30px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            border-color: #d9a44166;
+        }
+
+        .icon {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff6df;
             border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            font-size: 25px;
+            margin-bottom: 20px;
         }
 
         .card h3 {
             margin-bottom: 10px;
+            font-size: 19px;
         }
 
         .card p {
-            color: #667085;
+            color: var(--muted);
             font-size: 15px;
         }
 
-        .highlight {
-            background: #fff8e6;
+        /* ECITIZEN */
+        .ecitizen {
+            background: white;
         }
 
-        .about {
-            max-width: 800px;
+        .ecitizen-box {
+            max-width: 1100px;
+            margin: auto;
+            background: linear-gradient(135deg, #111827, #1d2b41);
+            border-radius: 18px;
+            padding: 55px;
+            color: white;
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .ecitizen-box h2 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .ecitizen-box p {
+            color: #d1d5db;
+        }
+
+        .guide-list {
+            list-style: none;
+        }
+
+        .guide-list li {
+            margin-bottom: 13px;
+            color: #f3f4f6;
+        }
+
+        .guide-list li::before {
+            content: "✓";
+            color: var(--gold-light);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* ACADEMY */
+        .academy {
+            background: #fff8e8;
+        }
+
+        .academy-content {
+            max-width: 850px;
             margin: auto;
             text-align: center;
         }
 
-        .contact {
+        .academy-content h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .academy-content p {
+            color: var(--muted);
+            margin-bottom: 25px;
+        }
+
+        /* WHY US */
+        .why-grid {
+            max-width: 1050px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .why-item {
             text-align: center;
-            background: #101827;
+            padding: 25px;
+        }
+
+        .why-item strong {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .why-item p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* SECURITY */
+        .security {
+            background: #f0fdf4;
+        }
+
+        .security-box {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .security-box h2 {
+            margin-bottom: 12px;
+        }
+
+        .security-box p {
+            color: #475467;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: var(--dark);
             color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 38px;
+            margin-bottom: 12px;
         }
 
         .contact p {
-            color: #d1d5db;
-            margin-bottom: 20px;
+            color: #cbd5e1;
+            margin-bottom: 25px;
         }
 
+        /* FOOTER */
         footer {
-            background: #080d17;
+            background: #060911;
             color: #9ca3af;
             text-align: center;
-            padding: 25px;
+            padding: 28px 6%;
             font-size: 13px;
         }
 
-        @media (max-width: 700px) {
+        footer strong {
+            color: #e5e7eb;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            color: #9ca3af;
+            margin: 0 8px;
+        }
+
+        /* WHATSAPP */
+        .whatsapp {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 58px;
+            height: 58px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 27px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+            z-index: 999;
+        }
+
+        /* MOBILE */
+        @media (max-width: 750px) {
+
             header {
-                flex-direction: column;
-                gap: 12px;
+                padding: 14px 5%;
             }
 
-            nav a {
-                margin: 0 7px;
+            nav {
+                gap: 10px;
+            }
+
+            nav a:not(.nav-button) {
+                display: none;
             }
 
             .hero {
-                padding: 65px 6%;
+                min-height: 600px;
+                padding: 70px 5%;
             }
 
             .hero h1 {
-                font-size: 32px;
+                font-size: 44px;
             }
 
             .hero p {
-                font-size: 16px;
+                font-size: 17px;
+            }
+
+            section {
+                padding: 65px 5%;
+            }
+
+            .section-heading h2 {
+                font-size: 30px;
+            }
+
+            .ecitizen-box {
+                grid-template-columns: 1fr;
+                padding: 35px 25px;
+            }
+
+            .ecitizen-box h2 {
+                font-size: 29px;
+            }
+
+            .academy-content h2,
+            .contact h2 {
+                font-size: 30px;
             }
         }
     </style>
@@ -188,147 +461,433 @@
 
 <body>
 
+<!-- HEADER -->
 <header>
-    <div class="logo">ETG <span>TV</span></div>
+
+    <div class="logo">
+        ETG <span>TV</span>
+    </div>
 
     <nav>
         <a href="#services">Services</a>
+        <a href="#ecitizen">eCitizen</a>
         <a href="#academy">Academy</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-button">Contact</a>
     </nav>
+
 </header>
 
+
+<!-- HERO -->
 <section class="hero">
-    <h1>Welcome to <span>ETG TV</span></h1>
 
-    <p>
-        Digital services, online application assistance and practical
-        digital skills for everyday life and business.
-    </p>
+    <div class="hero-content">
 
-    <a href="#services" class="button primary">Explore Our Services</a>
+        <div class="badge">
+            DIGITAL SERVICES • ONLINE ASSISTANCE • DIGITAL SKILLS
+        </div>
 
-    <a href="#contact" class="button secondary">Contact Us</a>
+        <h1>
+            Making the <span>Digital World</span> Easier for You.
+        </h1>
+
+        <p>
+            ETG TV helps individuals and businesses access digital
+            services, understand online applications and develop
+            practical computer and digital skills.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#services" class="button primary">
+                Explore Services
+            </a>
+
+            <a href="#academy" class="button outline">
+                Learn Digital Skills
+            </a>
+
+        </div>
+
+    </div>
+
 </section>
 
+
+<!-- SERVICES -->
 <section id="services">
-    <div class="section-title">
-        <h2>Our Digital Services</h2>
-        <p>Simple, reliable and practical digital assistance.</p>
+
+    <div class="section-heading">
+
+        <div class="small-title">
+            What We Do
+        </div>
+
+        <h2>
+            Digital Services You Can Rely On
+        </h2>
+
+        <p>
+            Practical assistance designed to make everyday digital
+            tasks easier and more understandable.
+        </p>
+
     </div>
+
 
     <div class="services">
 
         <div class="card">
-            <h3>🪪 Online Applications</h3>
+
+            <div class="icon">🪪</div>
+
+            <h3>
+                Online Applications
+            </h3>
+
             <p>
-                Assistance and guidance with online applications
-                and government digital services.
+                Guidance and assistance with online applications
+                and digital government services.
             </p>
+
         </div>
 
+
         <div class="card">
-            <h3>💻 Computer Services</h3>
+
+            <div class="icon">💻</div>
+
+            <h3>
+                Computer Services
+            </h3>
+
             <p>
                 Typing, document preparation, printing, scanning,
-                online research and other computer services.
+                internet research and other computer services.
             </p>
+
         </div>
+
 
         <div class="card">
-            <h3>📱 Digital Assistance</h3>
+
+            <div class="icon">📄</div>
+
+            <h3>
+                Document Services
+            </h3>
+
             <p>
-                Learn how to use websites, online platforms,
-                email and other digital tools.
+                Professional help with CVs, letters, applications
+                and digital documents.
             </p>
+
         </div>
+
 
         <div class="card">
-            <h3>📄 Document Services</h3>
+
+            <div class="icon">📱</div>
+
+            <h3>
+                Digital Assistance
+            </h3>
+
             <p>
-                Professional help with CVs, letters, applications,
-                documents and digital files.
+                Learn how to use websites, email, online platforms
+                and other digital tools.
             </p>
+
         </div>
 
     </div>
+
 </section>
 
-<section id="academy" class="highlight">
-    <div class="section-title">
-        <h2>ETG Digital Academy</h2>
 
-        <p>
-            Learn practical computer and digital skills
-            that you can use at school, work or in business.
-        </p>
+<!-- ECITIZEN -->
+<section id="ecitizen" class="ecitizen">
+
+    <div class="ecitizen-box">
+
+        <div>
+
+            <div class="small-title">
+                ETG TV Guides
+            </div>
+
+            <h2>
+                Need Help Understanding eCitizen?
+            </h2>
+
+            <p>
+                We provide practical educational guides that explain
+                how to navigate online government services step by step.
+            </p>
+
+            <br>
+
+            <a href="#contact" class="button primary">
+                Get Assistance
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <ul class="guide-list">
+
+                <li>
+                    Step-by-step online application guides
+                </li>
+
+                <li>
+                    Digital account guidance
+                </li>
+
+                <li>
+                    Document preparation assistance
+                </li>
+
+                <li>
+                    General digital skills support
+                </li>
+
+            </ul>
+
+        </div>
+
     </div>
 
-    <div class="about">
-        <p>
-            Our goal is to make digital skills easier to understand.
-            We will provide tutorials, guides and practical lessons
-            for beginners and anyone who wants to improve their
-            digital abilities.
-        </p>
-    </div>
 </section>
 
+
+<!-- ACADEMY -->
+<section id="academy" class="academy">
+
+    <div class="academy-content">
+
+        <div class="small-title">
+            ETG Digital Academy
+        </div>
+
+        <h2>
+            Learn Skills That Work in the Real World.
+        </h2>
+
+        <p>
+            From computer basics to online services and digital
+            productivity, ETG Digital Academy will provide practical
+            lessons designed for beginners and growing professionals.
+        </p>
+
+        <a href="#contact" class="button primary">
+            Join the Academy
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- WHY ETG -->
 <section>
-    <div class="section-title">
-        <h2>eCitizen Help & Guides</h2>
 
-        <p>
-            Practical guides to help you understand and navigate
-            online government services.
-        </p>
+    <div class="section-heading">
+
+        <div class="small-title">
+            Why ETG TV
+        </div>
+
+        <h2>
+            Simple. Practical. Digital.
+        </h2>
+
     </div>
 
-    <div class="about">
+
+    <div class="why-grid">
+
+        <div class="why-item">
+
+            <div class="icon" style="margin:auto;">
+                ✓
+            </div>
+
+            <strong>
+                Practical Guidance
+            </strong>
+
+            <p>
+                We focus on clear instructions that people can actually use.
+            </p>
+
+        </div>
+
+
+        <div class="why-item">
+
+            <div class="icon" style="margin:auto;">
+                🎓
+            </div>
+
+            <strong>
+                Digital Education
+            </strong>
+
+            <p>
+                Our goal is to help people become more confident with technology.
+            </p>
+
+        </div>
+
+
+        <div class="why-item">
+
+            <div class="icon" style="margin:auto;">
+                🔒
+            </div>
+
+            <strong>
+                Security First
+            </strong>
+
+            <p>
+                We encourage safe digital practices and responsible use of online services.
+            </p>
+
+        </div>
+
+
+        <div class="why-item">
+
+            <div class="icon" style="margin:auto;">
+                🇰🇪
+            </div>
+
+            <strong>
+                Built for Everyone
+            </strong>
+
+            <p>
+                Digital information should be accessible, understandable and useful.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SECURITY -->
+<section class="security">
+
+    <div class="security-box">
+
+        <h2>
+            🔐 Your Digital Security Matters
+        </h2>
+
         <p>
-            ETG TV is an independent digital assistance and education
-            platform. We are not affiliated with or part of the
-            Government of Kenya or the eCitizen platform.
+            ETG TV will never ask you to publicly share sensitive
+            information such as passwords, PINs or one-time passwords (OTPs).
+            Always protect your personal information when using online services.
         </p>
 
         <br>
 
         <p>
-            <strong>Security first:</strong>
-            Never share your password, PIN or OTP with anyone.
+            <strong>
+                ETG TV is an independent digital services and education
+                platform and is not affiliated with the Government of Kenya
+                or eCitizen.
+            </strong>
         </p>
+
     </div>
+
 </section>
 
+
+<!-- ABOUT -->
 <section id="about">
-    <div class="section-title">
-        <h2>About ETG TV</h2>
+
+    <div class="section-heading">
+
+        <div class="small-title">
+            About ETG TV
+        </div>
+
+        <h2>
+            Technology With Purpose
+        </h2>
+
+        <p>
+            ETG TV is focused on helping people understand and use
+            technology with confidence — while creating opportunities
+            through digital skills, education and innovation.
+        </p>
+
     </div>
 
-    <div class="about">
-        <p>
-            ETG TV is a digital services and education platform
-            focused on helping people use technology with confidence.
-        </p>
-    </div>
 </section>
 
+
+<!-- CONTACT -->
 <section id="contact" class="contact">
-    <div class="section-title">
-        <h2>Need Digital Assistance?</h2>
 
-        <p>
-            Contact ETG TV and let's get started.
-        </p>
+    <h2>
+        Ready to Get Started?
+    </h2>
 
-        <a href="#" class="button primary">WhatsApp Us</a>
-    </div>
+    <p>
+        Contact ETG TV for digital assistance, training and enquiries.
+    </p>
+
+    <!-- Replace the # below with your WhatsApp link later -->
+    <a href="#" class="button primary">
+        💬 Contact ETG TV
+    </a>
+
 </section>
 
+
+<!-- FOOTER -->
 <footer>
+
+    <div>
+        <strong>ETG TV</strong> — Digital Services & Digital Skills
+    </div>
+
+    <div class="footer-links">
+
+        <a href="#services">Services</a>
+
+        <a href="#ecitizen">eCitizen</a>
+
+        <a href="#academy">Academy</a>
+
+        <a href="#about">About</a>
+
+        <a href="#contact">Contact</a>
+
+    </div>
+
+    <br>
+
     © 2026 ETG TV. All Rights Reserved.
+
 </footer>
 
+
+<!-- WHATSAPP BUTTON -->
+<!-- We will add your real WhatsApp number here later. -->
+<a href="#" class="whatsapp" aria-label="WhatsApp">
+    💬
+</a>
+
 </body>
-  </html>
+            </html>
