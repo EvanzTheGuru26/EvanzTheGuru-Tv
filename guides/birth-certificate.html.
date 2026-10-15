@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to apply for a Kenyan birth certificate, register a birth late, and request changes to birth records through official Civil Registration Services.">
+  <title>Birth Certificate Guide | ETG TV</title>
+  <style>
+    :root {
+      --navy: #101b2d;
+      --gold: #d9a441;
+      --light-gold: #fff5dc;
+      --text: #273244;
+      --muted: #64748b;
+      --background: #f4f6fa;
+      --white: #ffffff;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 20px;
+      border-bottom: 4px solid var(--gold);
+    }
+    .header-inner, main, footer {
+      width: min(900px, 92%);
+      margin: auto;
+    }
+    .brand {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .brand span { color: var(--gold); }
+    .tagline {
+      margin: 4px 0 0;
+      color: #d7dfeb;
+      font-size: 13px;
+    }
+    main { padding: 28px 0 45px; }
+    .hero {
+      background: var(--navy);
+      color: white;
+      padding: 30px 24px;
+      border-radius: 14px;
+      margin-bottom: 22px;
+    }
+    .label {
+      color: var(--gold);
+      font-weight: bold;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    h1 { font-size: clamp(27px, 5vw, 38px); line-height: 1.2; }
+    h2 { color: var(--navy); font-size: 23px; margin-top: 0; }
+    h3 { color: var(--navy); }
+    .hero p { color: #e4eaf3; }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 18px 0;
+    }
+    .notice {
+      background: var(--light-gold);
+      border-left: 4px solid var(--gold);
+      padding: 15px 17px;
+      border-radius: 5px;
+      margin: 18px 0;
+    }
+    li { margin: 8px 0; padding-left: 3px; }
+    .step {
+      border-left: 3px solid var(--gold);
+      padding: 2px 0 5px 18px;
+      margin: 20px 0;
+    }
+    .step h3 { margin: 0 0 5px; }
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: #172033;
+      padding: 12px 17px;
+      margin: 7px 6px 7px 0;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .button.secondary { background: var(--navy); color: white; }
+    a { color: #0759a5; overflow-wrap: anywhere; }
+    .small { color: var(--muted); font-size: 14px; }
+    footer {
+      padding: 24px 0 35px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer a { color: var(--navy); }
+    @media (max-width: 600px) {
+      .hero, .card { padding: 20px; }
+      h2 { font-size: 21px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">ETG <span>TV</span></div>
+      <p class="tagline">Evanz The Guru | Digital Services & Digital Skills</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="label">ETG TV Online Help Centre</div>
+      <h1>How to Apply for a Kenyan Birth Certificate</h1>
+      <p>A simple guide to birth certificate applications, late birth registration, supporting documents and online services in Kenya.</p>
+      <a class="button" href="https://crs.ecitizen.go.ke/" target="_blank" rel="noopener noreferrer">Open Civil Registration Services</a>
+    </section>
+
+    <section class="card">
+      <h2>1. What is a birth certificate?</h2>
+      <p>A birth certificate is an official record of a person's birth. In Kenya, birth registration and the issuance of birth certificates are handled by Civil Registration Services (CRS).</p>
+      <p>The document may be needed for school registration, passport applications, identity documentation and other official processes.</p>
+      <p>Official portal: <a href="https://crs.ecitizen.go.ke/" target="_blank" rel="noopener noreferrer">crs.ecitizen.go.ke</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Identify the type of application you need</h2>
+      <ul>
+        <li><strong>Current birth registration:</strong> Generally for a birth reported within six months of the date of birth.</li>
+        <li><strong>Late birth registration:</strong> For a birth that was not registered within six months.</li>
+        <li><strong>Change of particulars:</strong> If you need to request correction or alteration of details in a birth record.</li>
+        <li><strong>Birth registration abroad:</strong> For eligible Kenyan citizens born outside Kenya.</li>
+        <li><strong>Re-registration:</strong> Certain circumstances, such as recognition or adoption, may require a specific process.</li>
+      </ul>
+      <div class="notice">
+        <strong>Important:</strong> These applications are not interchangeable. Choose the service that matches your circumstances and follow the instructions given by Civil Registration Services.
+      </div>
+      <p>See the <a href="https://usajili.go.ke/civil-registration-services" target="_blank" rel="noopener noreferrer">official Civil Registration Services information</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>3. Requirements for a current birth certificate</h2>
+      <p>For a birth that has already been notified and is being registered within the normal period, you may need:</p>
+      <ul>
+        <li>The child's birth notification or acknowledgement of birth notification (ABN), where applicable.</li>
+        <li>The child's full name, date of birth and place of birth.</li>
+        <li>The mother's details as recorded in the birth notification.</li>
+        <li>Parents' identification documents, as requested.</li>
+        <li>The birth notification number or other evidence from the place of birth if the notification document is missing.</li>
+      </ul>
+      <p>The exact requirements depend on the record and the service selected. If the birth occurred in a hospital, ask the facility how to obtain or verify the birth notification.</p>
+      <p>Official information: <a href="https://usajili.go.ke/current-birth-certificate" target="_blank" rel="noopener noreferrer">Current Birth Certificate requirements</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>4. How to apply online</h2>
+
+      <div class="step">
+        <h3>Step 1: Open the official portal</h3>
+        <p>Visit Civil Registration Services and sign in using your eCitizen account, or follow the official instructions to create an account.</p>
+        <a href="https://crs.ecitizen.go.ke/" target="_blank" rel="noopener noreferrer">Open CRS Portal ↗</a>
+      </div>
+
+      <div class="step">
+        <h3>Step 2: Select the correct birth service</h3>
+        <p>Choose the option that matches your situation, such as a current birth certificate, late registration or change of particulars. Check any county or place-of-birth conditions displayed by the portal.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 3: Enter the required details</h3>
+        <p>Fill in the information requested. Check the child's names, date of birth, place of birth and parents' details against the available records.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 4: Provide supporting documents</h3>
+        <p>Upload or provide the documents requested for your application. Make sure images are readable and all required pages are included.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 5: Review and submit</h3>
+        <p>Review the details carefully before submitting. Incorrect details may delay processing or require a separate correction procedure.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 6: Pay through the official system</h3>
+        <p>If a fee is displayed, confirm the amount and payment instructions on the official portal. Keep the payment receipt and application reference.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 7: Print the required documents</h3>
+        <p>The CRS portal advises applicants to print the application form and invoice after completing an application where instructed.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 8: Follow submission and collection instructions</h3>
+        <p>Submit the printed documents to the registrar or attend the designated office if the portal instructs you to do so. Track the application and follow the official instructions for collection.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>5. Late birth registration</h2>
+      <p>If a birth was not registered within six months, the application generally follows the late registration process. The registrar may request evidence to verify the person's birth and identity.</p>
+      <p>Documents that may be requested include:</p>
+      <ul>
+        <li>Clinic, antenatal or hospital records.</li>
+        <li>Religious records, where relevant.</li>
+        <li>Parents' identification documents.</li>
+        <li>School records or school-leaving documents.</li>
+        <li>Identification documents for an adult applicant.</li>
+        <li>An affidavit, chief's letter or other supporting evidence where required.</li>
+        <li>Completed late registration forms and any additional documents requested by the registrar.</li>
+      </ul>
+      <div class="notice">
+        <strong>Do not assume every document is mandatory for every applicant.</strong> The registrar determines what evidence is needed for the individual case. Late registration can require further verification and approval.
+      </div>
+      <p>Official guidance: <a href="https://usajili.go.ke/late-birth" target="_blank" rel="noopener noreferrer">Late Birth Registration</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>6. What if details on the certificate are wrong?</h2>
+      <p>If a name or other detail is incorrect, first determine whether the error is in the original birth notification or in the registered record. The correct process depends on the type of error and when the record was created.</p>
+      <ul>
+        <li>Keep the existing certificate and relevant supporting documents.</li>
+        <li>Identify the exact detail that needs correction.</li>
+        <li>Check the official change-of-particulars service for the required evidence.</li>
+        <li>Follow the registrar's instructions before paying or submitting an application.</li>
+      </ul>
+      <p>Do not submit false information or assume that every change can be made online.</p>
+      <p>Start at the <a href="https://crs.ecitizen.go.ke/" target="_blank" rel="noopener noreferrer">official CRS portal</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>7. Fees and processing time</h2>
+      <p>Fees and processing arrangements can differ depending on whether the application is for a current birth, late registration, correction or another service.</p>
+      <p>Check the amount displayed for your specific service on the official portal before paying. Processing time may depend on verification, missing documents and the registrar's review.</p>
+      <div class="notice">
+        <strong>Payment tip:</strong> Pay only through the official payment instructions and keep your receipt. Avoid relying on old fee lists shared on social media.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>8. Common mistakes to avoid</h2>
+      <ul>
+        <li>Selecting current registration when late registration is required.</li>
+        <li>Entering names or dates that do not match supporting records.</li>
+        <li>Using an incorrect birth notification number.</li>
+        <li>Submitting unclear or incomplete documents.</li>
+        <li>Failing to print forms or invoices when instructed.</li>
+        <li>Ignoring a request for additional evidence from the registrar.</li>
+        <li>Losing the application reference or payment receipt.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>9. Online safety</h2>
+      <ul>
+        <li>Use the official government portal for applications and payments.</li>
+        <li>Never share your password, one-time password (OTP) or M-Pesa PIN.</li>
+        <li>Do not pay an unofficial person who promises guaranteed approval.</li>
+        <li>Share personal documents only when necessary and through trusted official channels.</li>
+        <li>Contact Civil Registration Services if your application or payment has a problem.</li>
+      </ul>
+      <p>Official contact details are available through the <a href="https://usajili.go.ke/civil-registration-services" target="_blank" rel="noopener noreferrer">Civil Registration Services information page</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>10. Need help understanding the process?</h2>
+      <p>ETG TV can help you understand the online steps, organise your documents and navigate digital services. Civil Registration Services remains responsible for verifying records, approving applications and issuing certificates.</p>
+      <a class="button" href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20understanding%20a%20Kenyan%20birth%20certificate%20application." target="_blank" rel="noopener noreferrer">Ask ETG TV on WhatsApp</a>
+      <p class="small">Never send your password, OTP or M-Pesa PIN through WhatsApp.</p>
+    </section>
+
+    <p><a href="../index.html">← Back to ETG TV Homepage</a></p>
+  </main>
+
+  <footer>
+    <p><strong>ETG TV | Evanz The Guru</strong></p>
+    <p>Digital Services • Online Application Guidance • Digital Skills</p>
+    <p class="small">This guide is for general information and is not an official government publication. Requirements, fees and procedures may change. Confirm current details with Civil Registration Services.</p>
+    <p><a href="../index.html">Home</a> | <a href="https://crs.ecitizen.go.ke/" target="_blank" rel="noopener noreferrer">Official CRS Portal</a></p>
+  </footer>
+</body>
+</html>
