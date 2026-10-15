@@ -1290,6 +1290,140 @@ no<!DOCTYPE html>
             <strong>How to enrol:</strong>
             Contact ETG TV to ask about your preferred course, class format,
             schedule and fees before booking.
+            
+<!-- ETG DIGITAL ACADEMY ENROLMENT ENQUIRY -->
+<div class="service-card" id="academy-enrolment"
+     style="margin-top:30px; border-top:4px solid #d9a441;">
+
+    <div class="service-icon">📝</div>
+    <h2>Enquire About Classes</h2>
+    <p>
+        Choose your preferred course and learning method.
+        Send your enquiry to ETG TV on WhatsApp to discuss
+        fees, schedules and availability.
+    </p>
+
+    <form id="academyEnquiryForm">
+
+        <div style="margin-bottom:16px;">
+            <label for="studentName"><strong>Your name</strong></label>
+            <input
+                type="text"
+                id="studentName"
+                name="studentName"
+                placeholder="Enter your full name"
+                required
+                style="display:block;width:100%;padding:12px;margin-top:6px;border:1px solid #ccc;border-radius:6px;"
+            >
+        </div>
+
+        <div style="margin-bottom:16px;">
+            <label for="studentPhone"><strong>Your phone number</strong></label>
+            <input
+                type="tel"
+                id="studentPhone"
+                name="studentPhone"
+                placeholder="e.g. 0712345678"
+                required
+                style="display:block;width:100%;padding:12px;margin-top:6px;border:1px solid #ccc;border-radius:6px;"
+            >
+        </div>
+
+        <div style="margin-bottom:16px;">
+            <label for="academyCourse"><strong>Choose a course</strong></label>
+            <select
+                id="academyCourse"
+                name="academyCourse"
+                required
+                style="display:block;width:100%;padding:12px;margin-top:6px;border:1px solid #ccc;border-radius:6px;background:white;"
+            >
+                <option value="">-- Select a course --</option>
+                <option>Computer Basics</option>
+                <option>Microsoft Word</option>
+                <option>Microsoft Excel</option>
+                <option>Microsoft PowerPoint</option>
+                <option>Internet and Email</option>
+                <option>eCitizen and Online Services</option>
+                <option>Smartphone and Digital Skills</option>
+                <option>CV and Job Applications</option>
+                <option>Digital Business Skills</option>
+                <option>General Digital Skills</option>
+            </select>
+        </div>
+
+        <div style="margin-bottom:16px;">
+            <label for="learningMode"><strong>Preferred learning method</strong></label>
+            <select
+                id="learningMode"
+                name="learningMode"
+                required
+                style="display:block;width:100%;padding:12px;margin-top:6px;border:1px solid #ccc;border-radius:6px;background:white;"
+            >
+                <option value="">-- Choose learning method --</option>
+                <option>Online classes</option>
+                <option>In-person classes at ETG TV offices</option>
+                <option>Either online or in-person</option>
+            </select>
+        </div>
+
+        <div style="margin-bottom:20px;">
+            <label for="academyMessage"><strong>Additional information (optional)</strong></label>
+            <textarea
+                id="academyMessage"
+                name="academyMessage"
+                rows="3"
+                placeholder="Tell us what you would like to learn."
+                style="display:block;width:100%;padding:12px;margin-top:6px;border:1px solid #ccc;border-radius:6px;"
+            ></textarea>
+        </div>
+
+        <button
+            type="submit"
+            class="button primary"
+            style="border:0;cursor:pointer;width:100%;"
+        >
+            📲 Send Enquiry on WhatsApp
+        </button>
+
+    </form>
+
+    <p style="font-size:14px;margin-top:15px;">
+        Your enquiry will open in WhatsApp for you to review and send.
+        Fees, class times and availability will be confirmed by ETG TV.
+    </p>
+</div>
+
+<script>
+document.getElementById("academyEnquiryForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("studentName").value.trim();
+    const phone = document.getElementById("studentPhone").value.trim();
+    const course = document.getElementById("academyCourse").value;
+    const mode = document.getElementById("learningMode").value;
+    const extra = document.getElementById("academyMessage").value.trim();
+
+    if (!name || !phone || !course || !mode) {
+        alert("Please complete your name, phone number, course and learning method.");
+        return;
+    }
+
+    const message =
+        "Hello ETG TV! I would like to enquire about Digital Academy classes.\n\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Course: " + course + "\n" +
+        "Preferred method: " + mode + "\n" +
+        "Additional information: " + (extra || "None") +
+        "\n\nPlease share the fees, available schedules and enrolment details.";
+
+    const whatsappUrl =
+        "https://wa.me/254110446332?text=" + encodeURIComponent(message);
+
+    window.open(whatsappUrl, "_blank");
+});
+</script>
+            
         </div>
 
     </div>
