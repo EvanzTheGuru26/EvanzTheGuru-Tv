@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to access NTSA services in Kenya, including driving licences, driving tests, vehicle registration, transfers and inspections.">
+  <title>NTSA Services Guide | ETG TV</title>
+  <style>
+    :root {
+      --navy: #101b2d;
+      --gold: #d9a441;
+      --light-gold: #fff5dc;
+      --text: #273244;
+      --muted: #64748b;
+      --background: #f4f6fa;
+      --white: #ffffff;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 20px;
+      border-bottom: 4px solid var(--gold);
+    }
+    .header-inner, main, footer {
+      width: min(900px, 92%);
+      margin: auto;
+    }
+    .brand {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .brand span { color: var(--gold); }
+    .tagline {
+      margin: 4px 0 0;
+      color: #d7dfeb;
+      font-size: 13px;
+    }
+    main { padding: 28px 0 45px; }
+    .hero {
+      background: var(--navy);
+      color: white;
+      padding: 30px 24px;
+      border-radius: 14px;
+      margin-bottom: 22px;
+    }
+    .label {
+      color: var(--gold);
+      font-weight: bold;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    h1 { font-size: clamp(27px, 5vw, 38px); line-height: 1.2; }
+    h2 { color: var(--navy); font-size: 23px; margin-top: 0; }
+    h3 { color: var(--navy); }
+    .hero p { color: #e4eaf3; }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 18px 0;
+    }
+    .notice {
+      background: var(--light-gold);
+      border-left: 4px solid var(--gold);
+      padding: 15px 17px;
+      border-radius: 5px;
+      margin: 18px 0;
+    }
+    li { margin: 8px 0; padding-left: 3px; }
+    .step {
+      border-left: 3px solid var(--gold);
+      padding: 2px 0 5px 18px;
+      margin: 20px 0;
+    }
+    .step h3 { margin: 0 0 5px; }
+    .button {
+      display: inline-block;
+      background: var(--gold);
+      color: #172033;
+      padding: 12px 17px;
+      margin: 7px 6px 7px 0;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .button.secondary { background: var(--navy); color: white; }
+    a { color: #0759a5; overflow-wrap: anywhere; }
+    .small { color: var(--muted); font-size: 14px; }
+    footer {
+      padding: 24px 0 35px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer a { color: var(--navy); }
+    @media (max-width: 600px) {
+      .hero, .card { padding: 20px; }
+      h2 { font-size: 21px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">ETG <span>TV</span></div>
+      <p class="tagline">Evanz The Guru | Digital Services & Digital Skills</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="label">ETG TV Online Help Centre</div>
+      <h1>Kenya NTSA Services: A Beginner's Guide</h1>
+      <p>Learn how to access transport services online, prepare your documents, make payments safely and follow up on your application.</p>
+      <a class="button" href="https://serviceportal.ntsa.go.ke/" target="_blank" rel="noopener noreferrer">Open NTSA Service Portal</a>
+    </section>
+
+    <section class="card">
+      <h2>1. What is NTSA?</h2>
+      <p>The National Transport and Safety Authority (NTSA) is the Kenyan government authority responsible for various road transport and safety services.</p>
+      <p>Its services include driver testing and licensing, motor vehicle registration, vehicle inspections and transport licensing.</p>
+      <p>Official website: <a href="https://ntsa.go.ke/" target="_blank" rel="noopener noreferrer">ntsa.go.ke</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Common NTSA services</h2>
+      <ul>
+        <li><strong>Driving licences:</strong> Access the available services for provisional licences, driving licences, renewals and replacements.</li>
+        <li><strong>Driving tests:</strong> Check requirements and follow the instructions for booking a driving test.</li>
+        <li><strong>Vehicle registration:</strong> Access the applicable registration services for motor vehicles.</li>
+        <li><strong>Transfer of ownership:</strong> Follow the official process when buying or selling a vehicle.</li>
+        <li><strong>Vehicle records:</strong> Access available vehicle record or logbook services.</li>
+        <li><strong>Vehicle inspection:</strong> Check inspection requirements and follow the instructions for your vehicle category.</li>
+        <li><strong>Public service and transport licensing:</strong> Check the applicable requirements for the service you need.</li>
+      </ul>
+      <p>Not every service has the same requirements. Select your exact service on the official portal before preparing documents or making payment.</p>
+    </section>
+
+    <section class="card">
+      <h2>3. What you may need</h2>
+      <p>Requirements depend on the service. Before applying, prepare the information relevant to your transaction.</p>
+      <ul>
+        <li>Your eCitizen account login details.</li>
+        <li>Your national ID details, where required.</li>
+        <li>Your vehicle registration number, where relevant.</li>
+        <li>Your vehicle logbook or electronic logbook details, where required.</li>
+        <li>Relevant buyer or seller information for a vehicle transfer.</li>
+        <li>Any supporting documents requested by the portal.</li>
+        <li>A valid payment method accepted by the official portal.</li>
+      </ul>
+      <div class="notice">
+        <strong>Important:</strong> This is a general preparation list, not a universal checklist. For example, a driving licence renewal and a vehicle ownership transfer require different information. Follow the instructions for your specific service.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>4. How to access NTSA services online</h2>
+
+      <div class="step">
+        <h3>Step 1: Open the official portal</h3>
+        <p>Use the official NTSA Service Portal. Check that the address is correct before signing in or entering personal information.</p>
+        <a href="https://serviceportal.ntsa.go.ke/" target="_blank" rel="noopener noreferrer">Open NTSA Service Portal ↗</a>
+      </div>
+
+      <div class="step">
+        <h3>Step 2: Sign in using your eCitizen account</h3>
+        <p>Use your existing eCitizen credentials if requested. If you do not have an account, follow the official account registration instructions.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 3: Select the service you need</h3>
+        <p>Choose the correct category, such as driver services or vehicle services. Read the service description carefully before proceeding.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 4: Enter the required details</h3>
+        <p>Complete the form accurately. Double-check ID numbers, vehicle registration details and names before submitting.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 5: Attach supporting documents</h3>
+        <p>Upload or provide the documents requested by the portal. Make sure scans or photographs are clear and complete, where uploads are accepted.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 6: Review the fee and pay</h3>
+        <p>Check the amount displayed for your selected service. Pay only through the payment instructions provided by the official system, then keep your confirmation and reference number.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 7: Follow the next instructions</h3>
+        <p>Depending on the service, you may need to book an appointment, attend a driving test or vehicle inspection, or provide original documents. Do not assume that every service is completed entirely online.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 8: Track and collect your result</h3>
+        <p>Check your application history, account notifications or official status service for updates. Follow the official instructions for downloading, collecting or verifying the resulting document.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>5. Vehicle ownership transfer: important points</h2>
+      <p>If you are buying or selling a vehicle, use the official NTSA process for transferring ownership.</p>
+      <ul>
+        <li>Verify the vehicle details and the identity of the parties involved.</li>
+        <li>Check the requirements displayed for the ownership transfer service.</li>
+        <li>Follow the official steps for the seller and buyer, as applicable.</li>
+        <li>Confirm the required payment and retain transaction records.</li>
+        <li>Verify that the transfer has been completed and access the relevant vehicle registration record as instructed.</li>
+      </ul>
+      <div class="notice">
+        <strong>Buyer safety:</strong> Do not rely solely on a screenshot or a seller's verbal assurance. Verify vehicle records through official channels before completing a purchase.
+      </div>
+      <p>NTSA information: <a href="https://ntsa.go.ke/services" target="_blank" rel="noopener noreferrer">Official list of services</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>6. Fees and processing time</h2>
+      <p>NTSA fees and processing times depend on the service and the circumstances of the application.</p>
+      <p>Use the amount displayed by the official portal for your specific transaction. Processing may require additional review, an appointment, a test or an inspection.</p>
+      <p>Do not rely on old fee lists or promises of guaranteed same-day completion. Keep your payment confirmation and application reference.</p>
+    </section>
+
+    <section class="card">
+      <h2>7. Check uncollected documents</h2>
+      <p>NTSA provides an official service for checking certain uncollected smart driving licences, number plates and logbooks.</p>
+      <a class="button" href="https://servicestatus.ntsa.go.ke/?resource=license" target="_blank" rel="noopener noreferrer">Check NTSA Service Status</a>
+      <p class="small">Use only the information requested on the official page and follow its instructions.</p>
+    </section>
+
+    <section class="card">
+      <h2>8. Common mistakes to avoid</h2>
+      <ul>
+        <li>Selecting the wrong NTSA service.</li>
+        <li>Entering an incorrect ID number or vehicle registration number.</li>
+        <li>Uploading incomplete or unclear supporting documents.</li>
+        <li>Paying before checking the transaction details.</li>
+        <li>Failing to save a receipt, reference number or confirmation message.</li>
+        <li>Assuming that payment alone completes a transaction.</li>
+        <li>Using unofficial agents who promise guaranteed approvals.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>9. Stay safe online</h2>
+      <ul>
+        <li>Access NTSA services through the official NTSA website or its linked service portal.</li>
+        <li>Never share your password, one-time password (OTP) or M-Pesa PIN with anyone.</li>
+        <li>Do not send sensitive identity or vehicle documents to strangers.</li>
+        <li>Verify payment instructions before confirming a transaction.</li>
+        <li>Contact NTSA through the official contact details if a payment or application has a problem.</li>
+      </ul>
+      <p>Official contact information: <a href="https://ntsa.go.ke/contact" target="_blank" rel="noopener noreferrer">NTSA Contact Us</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>10. Need help understanding the process?</h2>
+      <p>ETG TV can help you understand online steps, organise the information you need and navigate digital services. NTSA remains responsible for reviewing applications, approving transactions and issuing official documents.</p>
+      <a class="button" href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20need%20help%20understanding%20an%20NTSA%20online%20service." target="_blank" rel="noopener noreferrer">Ask ETG TV on WhatsApp</a>
+      <p class="small">Never send your password, OTP or M-Pesa PIN through WhatsApp.</p>
+    </section>
+
+    <p><a href="../index.html">← Back to ETG TV Homepage</a></p>
+  </main>
+
+  <footer>
+    <p><strong>ETG TV | Evanz The Guru</strong></p>
+    <p>Digital Services • Online Application Guidance • Digital Skills</p>
+    <p class="small">This guide is for general information and is not an official government publication. Requirements, fees and procedures may change. Confirm current details with NTSA before applying.</p>
+    <p><a href="../index.html">Home</a> | <a href="https://ntsa.go.ke/" target="_blank" rel="noopener noreferrer">Official NTSA Website</a></p>
+  </footer>
+</body>
+</html>
