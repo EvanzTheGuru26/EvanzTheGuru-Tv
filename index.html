@@ -485,10 +485,69 @@ no<!DOCTYPE html>
                 font-size: 28px;
             }
         }
+        /* ETG TV MOVING WELCOME MESSAGE */
+.etg-moving-banner {
+    width: 100%;
+    overflow: hidden;
+    background: #111b2b;
+    border-top: 2px solid #d9a441;
+    border-bottom: 2px solid #d9a441;
+    padding: 13px 0;
+    white-space: nowrap;
+}
+
+.etg-moving-text {
+    display: inline-block;
+    padding-left: 100%;
+    color: #f4c75d;
+    font-weight: 700;
+    font-size: 15px;
+    animation: etgMoveRight 18s linear infinite;
+}
+
+@keyframes etgMoveRight {
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .etg-moving-text {
+        animation: none;
+        padding-left: 12px;
+    }
+    }
+        .working-hours {
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 22px;
+    border: 1px solid #d9a441;
+    border-radius: 12px;
+    background: rgba(217, 164, 65, 0.08);
+    color: #ffffff;
+}
+
+.working-hours h3 {
+    color: #f4c75d;
+    margin-bottom: 14px;
+}
+
+.working-hours p {
+    margin: 9px 0;
+    line-height: 1.6;
+}
     </style>
 </head>
 
 <body>
+    <!-- ETG TV LIVE WELCOME ANIMATION -->
+<div class="etg-moving-banner">
+    <div class="etg-moving-text">
+        🇰🇪 WELCOME TO ETG TV — EVANZ THE GURU
+        | Digital Services | eCitizen Assistance |
+        Computer & Cyber Services | Digital Skills Training |
+        Need Help? WhatsApp Us on 0110 446 332
+    </div>
+</div>
 
 <!-- HEADER -->
 <header>
@@ -1069,6 +1128,25 @@ no<!DOCTYPE html>
             </p>
         </div>
     </div>
+    <!-- ETG TV WORKING HOURS -->
+<div class="working-hours">
+    <h3>🕒 ETG TV Working Hours</h3>
+
+    <p>
+        <strong>Monday – Saturday:</strong>
+        8:00 AM – 5:00 PM
+    </p>
+
+    <p>
+        <strong>Sunday:</strong> Closed
+    </p>
+
+    <p>
+        You can send us a WhatsApp message
+        outside working hours. We will respond
+        during working hours.
+    </p>
+</div>
 </section>
 
 <!-- FOOTER -->
