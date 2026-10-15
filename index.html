@@ -535,6 +535,77 @@ no<!DOCTYPE html>
     margin: 9px 0;
     line-height: 1.6;
 }
+        /* ETG TV THREE-DOT NAVIGATION */
+.etg-more-menu {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.etg-more-button {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #d9a441;
+    border-radius: 9px;
+    background: #111b2b;
+    color: #f4c75d;
+    font-size: 29px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.etg-more-button:hover {
+    background: #26344a;
+}
+
+.etg-more-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 255px;
+    max-width: calc(100vw - 30px);
+    max-height: 70vh;
+    overflow-y: auto;
+    z-index: 9999;
+    padding: 8px;
+    border: 1px solid #d9a441;
+    border-radius: 12px;
+    background: #111b2b;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .35);
+}
+
+.etg-more-dropdown.show {
+    display: block;
+}
+
+.etg-more-dropdown a {
+    display: block;
+    padding: 12px;
+    border-radius: 7px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.etg-more-dropdown a:hover {
+    background: rgba(217, 164, 65, .16);
+    color: #f4c75d;
+}
+
+/* Keep existing links on computers; simplify navigation on phones */
+@media (max-width: 700px) {
+    header nav > a {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+}
     </style>
 </head>
 
@@ -561,6 +632,29 @@ no<!DOCTYPE html>
             <a href="#academy">Academy</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
+            <!-- ETG TV THREE-DOT MENU -->
+<div class="etg-more-menu">
+    <button
+        class="etg-more-button"
+        id="etgMoreButton"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="etgMoreDropdown">
+        &#8942;
+    </button>
+
+    <div class="etg-more-dropdown" id="etgMoreDropdown">
+        <a href="#home">🏠 Home</a>
+        <a href="#services">💼 Our Services</a>
+        <a href="#ecitizen">🇰🇪 eCitizen Help Center</a>
+        <a href="#guide-library">📚 Guide Library</a>
+        <a href="#academy">🎓 Digital Academy</a>
+        <a href="#about">ℹ️ About ETG TV</a>
+        <a href="#contact">📞 Contact Us</a>
+        <a href="https://wa.me/254110446332">💬 WhatsApp Us</a>
+    </div>
+</div>
         </nav>
     </div>
 </header>
@@ -1228,6 +1322,38 @@ no<!DOCTYPE html>
     }
 })();
 </script>
+    <script>
+(function () {
+    const button = document.getElementById("etgMoreButton");
+    const dropdown = document.getElementById("etgMoreDropdown");
+
+    if (!button || !dropdown) return;
+
+    function closeMenu() {
+        dropdown.classList.remove("show");
+        button.setAttribute("aria-expanded", "false");
+    }
+
+    button.addEventListener("click", function (event) {
+        event.stopPropagation();
+
+        const isOpen = dropdown.classList.toggle("show");
+        button.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    dropdown.addEventListener("click", function (event) {
+        if (event.target.closest("a")) closeMenu();
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!event.target.closest(".etg-more-menu")) closeMenu();
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") closeMenu();
+    });
+})();
+    </script>
 
 </body>
     </html>
