@@ -706,7 +706,75 @@ no<!DOCTYPE html>
     margin-top: 18px;
     cursor: pointer;
 }
-        
+    /* ETG TV CUSTOMER TESTIMONIALS */
+.testimonials-section {
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 25px 18px;
+    box-sizing: border-box;
+    color: #ffffff;
+    background: #111b2b;
+    border: 1px solid #d9a441;
+    border-radius: 12px;
+}
+
+.testimonials-section h2 {
+    color: #f4c75d;
+    text-align: center;
+    margin-top: 0;
+}
+
+.testimonials-intro,
+.testimonial-note {
+    line-height: 1.6;
+    text-align: center;
+}
+
+.testimonials-section label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: 600;
+}
+
+.testimonials-section input:not([type="checkbox"]),
+.testimonials-section select,
+.testimonials-section textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #64748b;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #111827;
+    font: inherit;
+}
+
+.testimonials-section .testimonial-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.testimonials-section .testimonial-consent input {
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.testimonials-section button {
+    width: 100%;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.testimonial-note {
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.85;
+    }    
     </style>
 </head>
 
@@ -1651,7 +1719,64 @@ document.getElementById("academyEnquiryForm").addEventListener("submit", functio
         We'll respond during working hours.
     </p>
 </div>
-            
+            <!-- ETG TV CUSTOMER TESTIMONIALS -->
+<div class="testimonials-section">
+    <h2>⭐ Customer Testimonials</h2>
+
+    <p class="testimonials-intro">
+        Have you used our services? Share your experience
+        and help us improve CYBERGURU ONLINE CAFE.
+    </p>
+
+    <form id="testimonialForm">
+        <label for="testimonialName">Your Name</label>
+        <input type="text" id="testimonialName"
+               maxlength="80" required
+               placeholder="Enter your name">
+
+        <label for="testimonialService">Service Used</label>
+        <select id="testimonialService" required>
+            <option value="">-- Select a service --</option>
+            <option>eCitizen & Government Services</option>
+            <option>Computer & Cyber Services</option>
+            <option>CV & Document Services</option>
+            <option>Online Applications</option>
+            <option>Digital Skills Training</option>
+            <option>Digital Business Support</option>
+            <option>Other</option>
+        </select>
+
+        <label for="testimonialRating">Rate Your Experience</label>
+        <select id="testimonialRating" required>
+            <option value="">-- Choose a rating --</option>
+            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+            <option value="4">⭐⭐⭐⭐ Very Good</option>
+            <option value="3">⭐⭐⭐ Good</option>
+            <option value="2">⭐⭐ Fair</option>
+            <option value="1">⭐ Poor</option>
+        </select>
+
+        <label for="testimonialMessage">Your Feedback</label>
+        <textarea id="testimonialMessage" rows="4"
+                  maxlength="1000" required
+                  placeholder="Tell us about your experience"></textarea>
+
+        <label class="testimonial-consent">
+            <input type="checkbox" id="testimonialConsent" required>
+            I agree to send my feedback to ETG TV for review.
+        </label>
+
+        <button type="submit" class="button primary">
+            💬 Submit Feedback via WhatsApp
+        </button>
+    </form>
+
+    <p class="testimonial-note">
+        Feedback is sent to us for review and will not
+        automatically appear publicly on this website.
+    </p>
+</div>
+<!-- END CUSTOMER TESTIMONIALS -->
 
 <!-- FOOTER -->
 <footer>
@@ -1821,7 +1946,44 @@ document.getElementById("serviceRequestForm").addEventListener("submit", functio
 });
 </script>
             
-            
+       <!-- ETG TV CUSTOMER TESTIMONIALS SCRIPT -->
+<script>
+(function () {
+    const form = document.getElementById("testimonialForm");
+
+    if (!form) return;
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById("testimonialName").value.trim();
+        const service = document.getElementById("testimonialService").value;
+        const rating = document.getElementById("testimonialRating").value;
+        const feedback = document.getElementById("testimonialMessage").value.trim();
+        const consent = document.getElementById("testimonialConsent").checked;
+
+        if (!name || !service || !rating || !feedback || !consent) {
+            alert("Please complete all fields and agree to send your feedback.");
+            return;
+        }
+
+        const message =
+            "Hello ETG TV / CYBERGURU ONLINE CAFE,\n\n" +
+            "CUSTOMER FEEDBACK FOR REVIEW\n\n" +
+            "Name: " + name + "\n" +
+            "Service used: " + service + "\n" +
+            "Rating: " + rating + "/5\n" +
+            "Feedback: " + feedback + "\n\n" +
+            "I agree to send this feedback for review.";
+
+        const whatsappURL =
+            "https://wa.me/254110446332?text=" +
+            encodeURIComponent(message);
+
+        window.open(whatsappURL, "_blank", "noopener");
+    });
+})();
+</script>     
 
 </body>
     </html>
