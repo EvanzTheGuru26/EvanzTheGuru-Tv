@@ -1529,26 +1529,28 @@ document.getElementById("academyEnquiryForm").addEventListener("submit", functio
             <p>Tell us what you need help with and we'll guide you on the next step.</p>
             <div class="contact-number">+254 110 446 332</div>
 
-            <div class="working-hours">
-                <h3>🕒 ETG TV Working Hours</h3>
-                <p><strong>Monday – Saturday:</strong> 8:00 AM – 5:00 PM</p>
-                <p><strong>Sunday:</strong> Closed</p>
-                <p class="small-text">
-                    You can still send a WhatsApp message outside working hours.
-                    We'll respond during working hours.
-                </p>
-            </div>
+            
+<div class="working-hours">
+    <h3>🕒 ETG TV Working Hours</h3>
 
-            <div class="buttons">
-                <a href="https://wa.me/254110446332?text=Hello%20ETG%20TV%2C%20I%20would%20like%20to%20enquire%20about%20your%20digital%20services." class="button primary">
-                    💬 Contact ETG TV on WhatsApp
-                </a>
-            </div>
-            <p class="small-text">
-                Service fees vary by request. Government and third-party fees are separate where applicable.
-            </p>
-        </div>
-    </div>
+    <p>
+        <strong>Current Status:</strong>
+        <span id="etg-open-status" role="status">Checking...</span>
+    </p>
+
+    <p id="etg-status-message" aria-live="polite">
+        Checking today's working hours...
+    </p>
+
+    <p><strong>Monday – Saturday:</strong> 8:00 AM – 5:00 PM</p>
+    <p><strong>Sunday:</strong> Closed</p>
+
+    <p class="small-text">
+        You can still send a WhatsApp message outside working hours.
+        We'll respond during working hours.
+    </p>
+</div>
+            
 
 <!-- FOOTER -->
 <footer>
@@ -1636,6 +1638,58 @@ document.getElementById("academyEnquiryForm").addEventListener("submit", functio
     });
 })();
     </script>
+            
+<script>
+(function () {
+    function updateETGOpenStatus() {
+        const now = new Date();
+
+        const kenyaTime = new Date(
+            now.toLocaleString("en-US", {
+                timeZone: "Africa/Nairobi"
+            })
+        );
+
+        const day = kenyaTime.getDay();
+        const hour = kenyaTime.getHours();
+        const minute = kenyaTime.getMinutes();
+
+        const currentMinutes = hour * 60 + minute;
+        const openingTime = 8 * 60;
+        const closingTime = 17 * 60;
+
+        const status = document.getElementById("etg-open-status");
+        const message = document.getElementById("etg-status-message");
+
+        if (!status || !message) return;
+
+        if (day === 0) {
+            status.textContent = "🔴 CLOSED NOW";
+            status.style.color = "#ff7070";
+            message.textContent = "We're closed on Sundays. You can still contact us on WhatsApp.";
+        } else if (currentMinutes >= openingTime &&
+                   currentMinutes < closingTime) {
+            status.textContent = "🟢 OPEN NOW";
+            status.style.color = "#65d98b";
+            message.textContent = "We're open and ready to assist you!";
+        } else if (currentMinutes < openingTime) {
+            status.textContent = "🔴 CLOSED NOW";
+            status.style.color = "#ff7070";
+            message.textContent = "We open today at 8:00 AM.";
+        } else {
+            status.textContent = "🔴 CLOSED NOW";
+            status.style.color = "#ff7070";
+            message.textContent = day === 6
+                ? "We reopen on Monday at 8:00 AM."
+                : "We reopen tomorrow at 8:00 AM.";
+        }
+    }
+
+    updateETGOpenStatus();
+    setInterval(updateETGOpenStatus, 60000);
+})();
+                </script>
+            
 
 </body>
     </html>
