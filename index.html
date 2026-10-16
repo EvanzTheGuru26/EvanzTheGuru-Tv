@@ -656,6 +656,57 @@ no<!DOCTYPE html>
     font-size: 14px;
     line-height: 1.5;
 }
+        
+/* ETG TV SERVICE REQUEST FORM */
+.service-request-box {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 22px;
+    text-align: left;
+    border: 1px solid #d9a441;
+    border-radius: 12px;
+    background: #111b2b;
+    color: #ffffff;
+}
+
+.service-request-box h3 {
+    margin-bottom: 10px;
+    color: #f4c75d;
+}
+
+.service-request-box p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.service-request-box label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: 600;
+}
+
+.service-request-box input,
+.service-request-box select,
+.service-request-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #64748b;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #111827;
+    font: inherit;
+}
+
+.service-request-box textarea {
+    resize: vertical;
+}
+
+.service-request-box button {
+    width: 100%;
+    margin-top: 18px;
+    cursor: pointer;
+}
+        
     </style>
 </head>
 
@@ -1529,6 +1580,56 @@ document.getElementById("academyEnquiryForm").addEventListener("submit", functio
             <p>Tell us what you need help with and we'll guide you on the next step.</p>
             <div class="contact-number">+254 110 446 332</div>
 
+<!-- ETG TV SERVICE REQUEST FORM -->
+<div class="service-request-box">
+    <h3>📝 Request a Service</h3>
+    <p>Complete the form below and continue to WhatsApp to send your request.</p>
+
+    <form id="serviceRequestForm">
+        <label for="requestName">Your Name</label>
+        <input
+            type="text"
+            id="requestName"
+            name="requestName"
+            placeholder="Enter your name"
+            required
+        >
+
+        <label for="requestPhone">Your Phone Number (optional)</label>
+        <input
+            type="tel"
+            id="requestPhone"
+            name="requestPhone"
+            placeholder="e.g. 0712345678"
+        >
+
+        <label for="requestService">Choose a Service</label>
+        <select id="requestService" name="requestService" required>
+            <option value="">-- Select a service --</option>
+            <option>eCitizen & Government Services</option>
+            <option>Computer & Cyber Services</option>
+            <option>CV & Document Services</option>
+            <option>Online Applications</option>
+            <option>Digital Skills Training</option>
+            <option>Digital Business Support</option>
+            <option>Other Enquiry</option>
+        </select>
+
+        <label for="requestDetails">Describe What You Need</label>
+        <textarea
+            id="requestDetails"
+            name="requestDetails"
+            rows="4"
+            placeholder="Briefly explain how we can assist you"
+            required
+        ></textarea>
+
+        <button type="submit" class="button primary">
+            💬 Continue to WhatsApp
+        </button>
+    </form>
+</div>
+            
             
 <div class="working-hours">
     <h3>🕒 ETG TV Working Hours</h3>
@@ -1689,6 +1790,37 @@ document.getElementById("academyEnquiryForm").addEventListener("submit", functio
     setInterval(updateETGOpenStatus, 60000);
 })();
                 </script>
+            
+<script>
+document.getElementById("serviceRequestForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("requestName").value.trim();
+    const phone = document.getElementById("requestPhone").value.trim();
+    const service = document.getElementById("requestService").value;
+    const details = document.getElementById("requestDetails").value.trim();
+
+    if (!name || !service || !details) {
+        alert("Please complete your name, service, and request details.");
+        return;
+    }
+
+    const message =
+        "Hello ETG TV / CYBERGURU ONLINE CAFE,\n\n" +
+        "I would like to request a service.\n\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + (phone || "Not provided") + "\n" +
+        "Service: " + service + "\n" +
+        "Request: " + details;
+
+    const whatsappURL =
+        "https://wa.me/254110446332?text=" +
+        encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank", "noopener");
+});
+</script>
+            
             
 
 </body>
