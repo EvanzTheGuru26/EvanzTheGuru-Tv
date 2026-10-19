@@ -775,6 +775,56 @@ no<!DOCTYPE html>
     font-size: 13px;
     opacity: 0.85;
     }    
+
+        /* ETG TV HOMEPAGE VIDEO - MOBILE FRIENDLY */
+.etg-video-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 16px auto;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #000;
+    border-radius: 12px;
+}
+
+.etg-video-container video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+    background: #000;
+}
+
+#etg-sound-button {
+    display: block;
+    max-width: 100%;
+    margin: 12px auto;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #d9a441;
+    color: #111;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .etg-video-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 12px auto;
+        border-radius: 8px;
+    }
+
+    .etg-video-container video {
+        width: 100%;
+        height: auto;
+        max-height: 60vh;
+        object-fit: contain;
+    }
+}
     </style>
 </head>
 
@@ -852,24 +902,25 @@ no<!DOCTYPE html>
 
     <div class="container">
 
-        <div class="hero-image etg-video-container">
+        <div class="etg-video-container">
     <video
         id="etg-homepage-ad"
         autoplay
         muted
         loop
         playsinline
-        preload="auto"
+        preload="metadata"
+        controls
+        aria-label="ETG TV and CyberGuru Online Cafe advert"
     >
-        <source src="lv_0_20261019155546.mp4" type="video/mp4">
+        <source
+            src="lv_0_20261019155546.mp4"
+            type="video/mp4"
+        >
         Your browser does not support video playback.
     </video>
 
-    <button
-        type="button"
-        id="etg-sound-button"
-        class="button primary"
-    >
+    <button id="etg-sound-button" type="button">
         🔊 Play advert with sound
     </button>
         </div>
@@ -2026,4 +2077,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 </body>
-    </html>
+        
