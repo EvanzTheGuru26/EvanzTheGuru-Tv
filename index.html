@@ -852,12 +852,33 @@ no<!DOCTYPE html>
 
     <div class="container">
 
-        <div class="hero-image">
-            <img
-                src="file_00000000f14c821189cc8c5f050abf9d.png"
-                alt="Evanz The Guru working on a laptop at ETG TV"
-                fetchpriority="high"
-            >
+        <div class="hero-image etg-video-container">
+
+    <video
+        id="etg-homepage-ad"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="file_00000000f14c821189cc8c5f050abf9d.png"
+        aria-label="ETG TV and CyberGuru Online Cafe advertisement"
+    >
+        <source
+            src="lv_0_20261019150250.mp4"
+            type="video/mp4"
+        >
+        Your browser does not support video playback.
+    </video>
+
+    <button
+        type="button"
+        id="etg-sound-button"
+        class="button primary"
+    >
+        🔊 Play advert with sound
+    </button>
+
         </div>
 
         <div class="hero-content">
@@ -1984,6 +2005,32 @@ document.getElementById("serviceRequestForm").addEventListener("submit", functio
     });
 })();
 </script>     
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById("etg-homepage-ad");
+    const soundButton = document.getElementById("etg-sound-button");
 
+    if (!video || !soundButton) return;
+
+    video.muted = true;
+    video.loop = true;
+
+    video.play().catch(function () {
+        // The visitor may need to start playback manually.
+    });
+
+    soundButton.addEventListener("click", async function () {
+        try {
+            video.muted = false;
+            video.volume = 1;
+            await video.play();
+            soundButton.textContent = "🔊 Sound is on";
+        } catch (error) {
+            video.muted = true;
+            soundButton.textContent = "Tap to enable sound";
+        }
+    });
+});
+</script>
 </body>
     </html>
