@@ -1,0 +1,9 @@
+{
+  "$schema": "https://unpkg.com/wrangler@4/config-schema.json",
+  "name": "evanztheguru-tv",
+  "compatibility_date": "2026-10-16",
+  "assets": {
+    "directory": ".",
+    "run_worker_first": false
+  }
+}
